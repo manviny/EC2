@@ -81,10 +81,10 @@ sudo apt-get install -y python-pip  # sino lo tenemos instalado
 sudo pip install awscli
 
 aws configure
-# 1.- id
-# 2.- llave
-# 3.- zona si la zona es por ej eu-west-1a poner sin la última letra -> eu-west-1
-# 4.- json
+# AWS Access Key ID [None]: id
+# AWS Secret Access Key [None]: llave
+# Default region name [None]: zona si la zona es por ej eu-west-1a poner sin la última letra -> eu-west-1
+# Default output format [None]:json
 ```
 ##Automated ec2 backups
 [fuente](http://www.webmoves.net/blog/build/simple-automated-snapshots-of-multiple-ebs-volumes-3102/)  
