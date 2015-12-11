@@ -88,3 +88,12 @@ aws configure
 ```
 ##Automated ec2 backups
 [fuente](http://www.webmoves.net/blog/build/simple-automated-snapshots-of-multiple-ebs-volumes-3102/)  
+
+```sh
+./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
+0 22 * * * /root/bin/ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
+./ec2-automate-backup.sh -r "eu-west-1" -v "vol-48d356bb"  
+```
+
+
+
