@@ -86,3 +86,5 @@ aws configure
 # 3.- zona si la zona es por ej eu-west-1a poner sin la última letra -> eu-west-1
 # 4.- json
 ```
+##Automated ec2 backups
+[fuente](http://www.webmoves.net/blog/build/simple-automated-snapshots-of-multiple-ebs-volumes-3102/)  
