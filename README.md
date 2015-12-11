@@ -20,7 +20,7 @@ sudo nano /etc/sysctl.conf  #paste
 ```
 
 
-##Inicializa aplicaciones
+##Inicializa aplicaciones "on reboot"
 
 Crear script starter.sh
 ```bash
@@ -51,4 +51,14 @@ añadir
 
 # ejecuta tareas
 @reboot /home/ubuntu/starter.sh
+```
+
+##Instalar Odoo 9
+[fuente](http://toolkt.com/site/installing-odoo-9-in-ubuntu-14-04/)
+
+```sh
+sudo nano odoo-install.sh
+    # PEGAR EL CONTENIDO DE -> https://github.com/Yenthe666/InstallScript/blob/9.0/odoo_install.sh
+sudo chmod +x odoo-install.sh
+sudo ./odoo-install.sh
 ```
