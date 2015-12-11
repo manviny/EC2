@@ -22,7 +22,7 @@ sudo nano /etc/sysctl.conf  #paste
 
 ##Inicializa aplicaciones "on reboot"
 
-Crear script starter.sh
+Crear script starter.sh (hacerlo ejecutable sudo chmod +x starter.sh)  
 ```bash
 #!/bin/sh
 
