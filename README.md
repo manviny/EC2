@@ -35,7 +35,7 @@ then
 fi
 
 #Inicializar DreamFactory
-/opt/dreamfactory-2.0.2-0/ctlscript.sh start
+sudo -s /opt/dreamfactory-2.0.2-0/ctlscript.sh start
 
 ```
 Crear un cron para ejecutar el script anterior cada vez que se apaga el servidor
