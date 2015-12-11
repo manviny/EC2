@@ -37,5 +37,5 @@ añadir
 #27 22 * * * s3cmd sync -r --delete-removed --acl-private files s3://bucket/assets/
 
 # ejecuta tareas
-@reboot /home/bitnami/starter.sh
+@reboot /home/ubuntu/starter.sh
 ```
