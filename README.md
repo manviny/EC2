@@ -69,5 +69,20 @@ sudo ./odoo-install.sh
 ```sh
 wget https://bitnami.com/redirect/to/83996/bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
 chmod +x bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
-./bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
+sudo ./bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
+```
+
+##Instalar AWS CLI
+[fuente](https://alestic.com/2013/08/awscli/)   
+```sh
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install -y python-pip  # sino lo tenemos instalado
+sudo pip install awscli
+
+aws configure
+# 1.- id
+# 2.- llave
+# 3.- zona si la zona es por ej eu-west-1a poner sin la última letra -> eu-west-1
+# 4.- json
 ```
