@@ -64,6 +64,8 @@ sudo ./odoo-install.sh
 ```
 
 ##Instalar Dreamfactory
+[fuente](https://bitnami.com/stack/dreamfactory/installer)  
+
 ```sh
 wget https://bitnami.com/redirect/to/83996/bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
 chmod +x bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
