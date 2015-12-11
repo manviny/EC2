@@ -62,3 +62,10 @@ sudo nano odoo-install.sh
 sudo chmod +x odoo-install.sh
 sudo ./odoo-install.sh
 ```
+
+##Instalar Dreamfactory
+```sh
+wget https://bitnami.com/redirect/to/83996/bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
+chmod +x bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
+./bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
+```
