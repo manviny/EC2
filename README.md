@@ -3,8 +3,21 @@ sudo ssh -i ~/.ssh/ec2.pem ubuntu@1.2.3.4
 Abrir puertos 80, 8080 y 8069  
 
 
+##INCREMENTAR SWAP
+[fuente](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
 
+```bash
+sudo fallocate -l 2G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo nano /etc/fstab  (add this line)
+    /swapfile   none    swap    sw    0   0
+sudo nano /etc/sysctl.conf  #paste
+    vm.swappiness=10
+    vm.vfs_cache_pressure=50
 
+```
 
 
 ##Inicializa aplicaciones
