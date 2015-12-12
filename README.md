@@ -87,7 +87,9 @@ aws configure
 # Default output format [None]:json
 ```
 ##Automated ec2 backups
-[fuente](http://www.webmoves.net/blog/build/simple-automated-snapshots-of-multiple-ebs-volumes-3102/)  
+[fuente](http://www.webmoves.net/blog/build/simple-automated-snapshots-of-multiple-ebs-volumes-3102/)    
+[fuente mejor](https://www.drunksysadmin.com/automated-amazon-ebs-snapshots/) 
+
 
 ```sh
 # Borra volumenes con mas de 7 dias que esten etiquetados como Backup true  
@@ -110,4 +112,27 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 ```
 
 ## Convert snapshot to server
+
+
+
+## Install webmin on ubuntu EC2  
+[fuente mejor](http://xcruft.com/content/install-webmin-ubuntu-1404-using-aws-ec2-free-tier)  
+```sh
+# open port 1000
+Type: Custom TCP Rule
+Protocol: TCP
+Port Range: 10000
+Source: (Select "My IP) - Makes it work only from your current location.
+
+# install
+ wget http://prdownloads.sourceforge.net/webadmin/webmin_1.770_all.deb  
+ sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+ sudo dpkg --install webmin_1.770_all.deb
+ 
+# add user  "adminuser"
+sudo adduser adminuser
+sudo usermod -a -G sudo adminuser
+
+```
+https://ip:10000  
 
