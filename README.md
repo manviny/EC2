@@ -92,6 +92,19 @@ aws configure
 
 
 ```sh
+
+
+
+
+PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ubuntu/aws-missing-tools
+SHELL=/bin/bash
+39 13 * * * /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -r "eu-west-1" -v "vol-48d356bb"                   #Crea backup
+
+
+
+
+
+
 # Borra volumenes con mas de 7 dias que esten etiquetados como Backup true  
 $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n  
 
