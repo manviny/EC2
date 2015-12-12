@@ -98,7 +98,7 @@ aws configure
 
 PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ubuntu/aws-missing-tools
 SHELL=/bin/bash
-39 13 * * * /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -r "eu-west-1" -v "vol-48d356bb"                   #Crea backup
+39 13 * * * /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"                   #Crea backup
 
 
 
@@ -109,7 +109,7 @@ SHELL=/bin/bash
 $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n  
 
 # Crea copia  
-./ec2-automate-backup.sh -r "eu-west-1" -v "vol-48d356bb" 
+./ec2-automate-backup.sh -r "eu-west-1" -v "vol-******" 
 
 #  Cron
 "0 0 * * 0 ubuntu /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -s tag -t "Backup=true" > /home/ubuntu/aws-missing-tools/ec2-automate-backup_`date +"%Y%m%d"`.log"
@@ -121,7 +121,7 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 ./ec2-automate-backup.sh -r "eu-west-1" -s tag -t "Backup=true" > ./ec2-automate-backup_`date +"%Y%m%d"`.log 
 ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
 0 22 * * * /root/bin/ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
-./ec2-automate-backup.sh -r "eu-west-1" -v "vol-48d356bb"  
+./ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"  
 ```
 
 ## Convert snapshot to server
