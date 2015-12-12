@@ -128,8 +128,9 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 
 
 
-## Install webmin on ubuntu EC2  
-[fuente mejor](http://xcruft.com/content/install-webmin-ubuntu-1404-using-aws-ec2-free-tier)  
+## Install webmin on ubuntu EC2 (https://ip:10000)  
+[webmin](http://xcruft.com/content/install-webmin-ubuntu-1404-using-aws-ec2-free-tier)  
+[virtualmin](http://thebroodle.com/web-control-panels/virtualmin/how-to-install-virtualmin-on-a-vps-running-ubuntu-14-04/#arvlbdata) 
 ```sh
 # open port 1000
 Type: Custom TCP Rule
@@ -147,5 +148,5 @@ sudo adduser adminuser
 sudo usermod -a -G sudo adminuser
 
 ```
-https://ip:10000  
+ 
 
