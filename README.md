@@ -148,6 +148,8 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 [webmin](http://xcruft.com/content/install-webmin-ubuntu-1404-using-aws-ec2-free-tier)  
 [virtualmin](http://thebroodle.com/web-control-panels/virtualmin/how-to-install-virtualmin-on-a-vps-running-ubuntu-14-04/#arvlbdata) 
 ```sh
+#WEBMIN
+#======
 # open port 1000
 Type: Custom TCP Rule
 Protocol: TCP
@@ -163,6 +165,11 @@ Source: (Select "My IP) - Makes it work only from your current location.
 sudo adduser adminuser
 sudo usermod -a -G sudo adminuser
 
+# VIRTUALMIN
+============
+sudo wget http://software.virtualmin.com/gpl/scripts/install.sh
+sudo chmod +x install.sh
+sudo ./install.sh
 ```
  
 
