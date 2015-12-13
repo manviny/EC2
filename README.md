@@ -41,7 +41,7 @@ sudo nano /etc/sysctl.conf
 
 ##Inicializa aplicaciones "on reboot"
 
-Crear script starter.sh (hacerlo ejecutable sudo chmod +x starter.sh)  
+Crear script starter.sh (en un sitio seguro, /root/blabla, hacerlo ejecutable sudo chmod +x starter.sh)  
 ```bash
 #!/bin/sh
 
@@ -69,7 +69,7 @@ añadir
 #27 22 * * * s3cmd sync -r --delete-removed --acl-private files s3://bucket/assets/
 
 # ejecuta tareas
-@reboot /home/ubuntu/starter.sh
+@reboot /root/blabla/starter.sh
 ```
 
 ##Instalar Odoo 9
