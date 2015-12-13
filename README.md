@@ -1,15 +1,10 @@
 ## First steps  
 Si disponemos de una máquina pequeña (1GB RAM) -> incrementar swap
 ```sh
-#(OPTION A) Install UBUNTU LAMP server 
+# Install UBUNTU LAMP server 
 sudo apt-get update
 sudo apt-get upgrade
 sudo tasksel  #select LAMP
-
-#(OPTION B) Install BITNAMI LAMP serve
-https://bitnami.com/redirect/to/80385/bitnami-lampstack-5.5.30-1-linux-x64-installer.run
-sudo chmod +x bitnami-lampstack-5.5.30-1-linux-x64-installer.run
-./bitnami-lampstack-5.5.30-1-linux-x64-installer.run
 
 # install webmin / virtualmin
 ```
