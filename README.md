@@ -1,5 +1,6 @@
 ## First steps  
 Install webmin and virtualmin  
+mirar crontab de dfodoo  
 
 
 
