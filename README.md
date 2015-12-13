@@ -1,6 +1,8 @@
 ## First steps  
 Install webmin and virtualmin  
 mirar crontab de dfodoo  
+Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto 8080  
+
 
 
 
