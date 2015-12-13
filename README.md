@@ -1,4 +1,5 @@
 ## First steps  
+Si disponemos de una máquina pequeña (1GB RAM) -> incrementar swap
 ```sh
 #(OPTION A) Install UBUNTU LAMP server 
 sudo apt-get update
