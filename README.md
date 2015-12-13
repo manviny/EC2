@@ -1,4 +1,12 @@
 ## First steps  
+```sh
+#Install LAMP server
+sudo apt-get update
+sudo apt-get upgrade
+sudo tasksel  #select LAMP
+```
+
+sudo tasksel
 Install webmin and virtualmin  
 mirar crontab de dfodoo  
 Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto 8080  
