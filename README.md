@@ -32,9 +32,11 @@ sudo fallocate -l 2G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
-sudo nano /etc/fstab  (add this line)
+
+sudo nano /etc/fstab   #paste
     /swapfile   none    swap    sw    0   0
-sudo nano /etc/sysctl.conf  #paste
+    
+sudo nano /etc/sysctl.conf 
     vm.swappiness=10
     vm.vfs_cache_pressure=50
 
