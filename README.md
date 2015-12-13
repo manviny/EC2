@@ -112,12 +112,11 @@ aws configure
 
 ```sh
 
+$ crontab -e  #pegar las siguientes lineas
 
-
-
-PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ubuntu/aws-missing-tools
-SHELL=/bin/bash
-39 13 * * * /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"                   #Crea backup
+    PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ubuntu/aws-missing-tools
+    SHELL=/bin/bash
+    39 13 * * * /home/ubuntu/aws-missing-tools/ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"      #Crea backup
 
 
 
