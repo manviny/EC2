@@ -198,7 +198,10 @@ sudo usermod -a -G sudo adminuser
 
 # VIRTUALMIN
 ============
-# si tenemos instalado bitnami LAMP cambiar /etc/webmin/mysql/config y /etc/webmin/apache/config como el ejemplo de abajo
+# si tenemos instalado bitnami LAMP cambiar:
+# /etc/webmin/mysql/config y /etc/webmin/apache/config 
+# siguiendo los pasos de mas abajo
+# Reiniciar servidor
 sudo wget http://software.virtualmin.com/gpl/scripts/install.sh
 sudo chmod +x install.sh
 sudo ./install.sh
