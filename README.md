@@ -14,10 +14,18 @@ http://127.0.0.1:8888/phpmyadmin/
 ## First steps  
 Si disponemos de una máquina pequeña (1GB RAM) -> incrementar swap
 ```sh
-# Install UBUNTU LAMP server 
+# (Opción A) Install UBUNTU LAMP server 
 sudo apt-get update
 sudo apt-get upgrade
 sudo tasksel  #select LAMP
+
+# (Opción B) Install BITNAMI LAMP server 
+wget Lamp stack
+...
+
+# (Opción C) Install BITNAMI LAMP server 
+# Seleccionar una AMI con bitnami LAMP
+
 
 # install webmin / virtualmin
 ```
