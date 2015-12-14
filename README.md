@@ -1,5 +1,5 @@
-1.- [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
-
+  - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
+  - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)
 
 ## Connect to DB through localhost
 
