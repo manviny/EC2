@@ -1,3 +1,5 @@
+lamp bitnami ami, swap, df, odoo, webmin y configurarlo, restart, virtualmin  
+
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
