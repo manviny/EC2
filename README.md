@@ -3,6 +3,8 @@
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
   - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9) 
   - [Instalar Dreamfactory](https://github.com/manviny/EC2/blob/master/README.md#instalar-dreamfactory)
+  - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
+  
   
 
 
@@ -70,8 +72,12 @@ sudo nano /etc/sysctl.conf
 
 ##Inicializa aplicaciones "on reboot"
 
-Crear script starter.sh (en un sitio seguro, /root/blabla, hacerlo ejecutable sudo chmod +x starter.sh)  
+Crear script starter.sh (en un sitio seguro, /root/blabla, hacerlo ejecutable )  
 ```bash
+nano starter.sh
+sudo chmod +x starter.sh
+
+#Pegar este código
 #!/bin/sh
 
 #Inicializar deployd (se debe usar cada vez que se apaga el servidor)
