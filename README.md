@@ -202,5 +202,59 @@ sudo wget http://software.virtualmin.com/gpl/scripts/install.sh
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
- 
+### WEBMIN + BITNAMI LAMP
+/etc/webmin/mysql/config
+```cfg
+webmin_subs=0
+login=root
+date_subs=0
+max_text=1000
+perpage=25
+stop_cmd=/etc/init.d/bitnami stop mysql >/dev/null 2>&1
+mysqldump=/opt/bitnami/mysql/bin/mysqldump
+nodbi=0
+mysql_libs=/opt/bitnami/mysql/lib
+max_dbs=50
+start_cmd=/etc/init.d/bitnami start mysql >/dev/null 2>&1 &
+mysql_data=/var/lib/mysql
+mysqlimport=/opt/bitnami/mysql/bin/mysqlimport
+access=*: *
+style=0
+my_cnf=/opt/bitnami/mysql/my.cnf
+mysqlshow=/opt/bitnami/mysql/bin/mysqlshow
+mysql=/opt/bitnami/mysql/bin/mysql
+nopwd=0
+add_mode=1
+passwd_mode=0
+blob_mode=0
+mysqladmin=/opt/bitnami/mysql/bin/mysqladmin
+```
+/etc/webmin/apache/config  
+```cfg
+allow_virtualmin=0
+defines_name=APACHE_ARGUMENTS
+link_dir=/opt/bitnami/apache2/conf/sites-enabled
+test_manual=0
+show_list=0
+mime_types=/opt/bitnami/apache2/conf/mime.types
+access_conf=/opt/bitnami/apache2/conf/access.conf
+auto_mods=1
+stop_cmd=/etc/init.d/bitnami stop apache
+virt_file=/opt/bitnami/apache2/conf/sites-available
+test_apachectl=1
+max_servers=100
+srm_conf=/opt/bitnami/apache2/conf/srm.conf
+httpd_dir=/opt/bitnami/apache2
+start_cmd=/etc/init.d/bitnami start apache
+show_order=0
+test_always=0
+httpd_conf=/opt/bitnami/apache2/conf/httpd.conf
+defines_file=/opt/bitnami/apache2/bin/envvars
+apachectl_path=/opt/bitnami/apache2/bin/apachectl
+show_names=0
+test_config=1
+apply_cmd=/opt/bitnami/apache2/bin/apachectl graceful
+httpd_path=/opt/bitnami/apache2/bin/httpd
+```
+ [volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
 
