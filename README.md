@@ -1,9 +1,10 @@
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
-  - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9)  
+  - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9) 
+  - [Instalar Dreamfactory](https://github.com/manviny/EC2/blob/master/README.md#instalar-dreamfactory)
   
-https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9
+
 
 ## Connect to DB through localhost
 
@@ -119,6 +120,7 @@ wget https://bitnami.com/redirect/to/83996/bitnami-dreamfactory-2.0.2-0-linux-x6
 chmod +x bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
 sudo ./bitnami-dreamfactory-2.0.2-0-linux-x64-installer.run
 ```
+[volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
 
 ##Instalar AWS CLI
 [fuente](https://alestic.com/2013/08/awscli/)   
