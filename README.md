@@ -2,7 +2,7 @@
 (B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin   
 (C) LAMP bitnami AMI swap webmin virtualmin y luego DF u ODoo  
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
-(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF 
+**(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **
 
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
