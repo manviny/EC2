@@ -1,6 +1,9 @@
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
-  - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)
+  - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
+  - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9)  
+  
+https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9
 
 ## Connect to DB through localhost
 
@@ -106,6 +109,7 @@ sudo nano odoo-install.sh
 sudo chmod +x odoo-install.sh
 sudo ./odoo-install.sh
 ```
+[volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
 
 ##Instalar Dreamfactory
 [fuente](https://bitnami.com/stack/dreamfactory/installer)  
