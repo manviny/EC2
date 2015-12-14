@@ -1,3 +1,6 @@
+1.- [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
+
+
 ## Connect to DB through localhost
 
 ```sh
