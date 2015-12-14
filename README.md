@@ -5,7 +5,7 @@
   - [Instalar Dreamfactory](https://github.com/manviny/EC2/blob/master/README.md#instalar-dreamfactory)
   - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
   - [Instalar aws-cli](https://github.com/manviny/EC2/blob/master/README.md#instalar-aws-cli)
-  - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#instalar-aws-cli)
+  - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
   
   
   
