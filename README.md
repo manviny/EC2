@@ -1,5 +1,5 @@
 (A) lamp bitnami ami, swap, df, odoo, webmin y configurarlo, restart, virtualmin  
-(B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin 
+(B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin   
 (C) webmin virtualmin y luego DF u ODoo  
 
 
