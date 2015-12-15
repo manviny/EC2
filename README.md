@@ -14,7 +14,7 @@
   - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
   - [Instalar aws-cli](https://github.com/manviny/EC2/blob/master/README.md#instalar-aws-cli)
   - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
-  - [Install Vesta](## VESTA)
+  - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   
   
   
@@ -198,6 +198,7 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 [fuente](http://vestacp.com/docs/#how-to-install-vesta)  
 ```bash
 wget http://vestacp.com/pub/vst-install.sh
+sudo chmod +x vst-install.sh
 sudo su
 bash vst-install.sh --force
 ```
