@@ -2,8 +2,8 @@
 (B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin   
 (C) LAMP bitnami AMI swap webmin virtualmin y luego DF u ODoo  
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
-**(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **
-(F) vestacp ->  swap, vesta, ODoo, DF
+**(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **   
+(F) ubuntu, swap, vestacp, vesta, ODoo, DF
 
 
 ###Indice
