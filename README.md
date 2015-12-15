@@ -194,6 +194,13 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 0 22 * * * /root/bin/ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
 ./ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"  
 ```
+
+##AJENTI  
+```bash
+wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
+```
+
+
 ## VESTA
 [fuente](http://vestacp.com/docs/#how-to-install-vesta)  
 ```bash
