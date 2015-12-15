@@ -3,6 +3,8 @@
 (C) LAMP bitnami AMI swap webmin virtualmin y luego DF u ODoo  
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
 **(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **
+(F) vestacp ->  swap, vesta, ODoo, DF
+
 
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
@@ -12,6 +14,7 @@
   - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
   - [Instalar aws-cli](https://github.com/manviny/EC2/blob/master/README.md#instalar-aws-cli)
   - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
+  - [Install Vesta(https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
   
   
   
@@ -191,6 +194,16 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 0 22 * * * /root/bin/ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n -c /root/bin/cron-primer.sh  
 ./ec2-automate-backup.sh -r "eu-west-1" -v "vol-******"  
 ```
+## VESTA
+[fuente](http://vestacp.com/docs/#how-to-install-vesta)  
+```bash
+wget http://vestacp.com/pub/vst-install.sh
+sudo su
+bash vst-install.sh --force
+```
+
+
+
 
 ## Convert snapshot to server
 
