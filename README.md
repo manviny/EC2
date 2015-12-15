@@ -198,8 +198,12 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 ```
 
 ##AJENTI  
+[fuente](https://www.digitalocean.com/community/tutorials/how-to-install-the-ajenti-control-panel-and-ajenti-v-on-ubuntu-14-04)
 ```bash
 wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
+# Instalar pestaña WEB
+apt-get install ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm ajenti-v-mail ajenti-v-nodejs php5-mysql
+
 ```
 
 
