@@ -4,7 +4,7 @@
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
 **(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **   
 (F) ubuntu, swap, vestacp, vesta, ODoo, DF
-(G) DF AMI swap , Ajenti,  Odoo
+(G) UBUNTU, swap, bitnami LAMP, ajenti DF,  Odoo
 
 
 ###Indice
