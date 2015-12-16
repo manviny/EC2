@@ -16,6 +16,8 @@
   - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
   - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   - [Install Ajenti](https://github.com/manviny/EC2/blob/master/README.md#ajenti)
+  - [Create user with sudo privileges](#Create user with sudo privileges)  
+  - ### Create ###
   
   
   
@@ -33,6 +35,13 @@ sudo ssh -N -L 8888:127.0.0.1:80 -i ~/.ssh/bitnami-hosting.pem bitnami@deployd.b
 acceder a las bases de datos
 http://127.0.0.1:8888/rockmongo/
 http://127.0.0.1:8888/phpmyadmin/
+```
+
+##Create user with sudo privileges
+```sh
+# add user  "adminuser"
+sudo adduser adminuser
+sudo usermod -a -G sudo adminuser
 ```
 
 ## First steps  
