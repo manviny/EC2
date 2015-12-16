@@ -74,7 +74,7 @@ Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto
 
 
 
-##Restore snapshot
+## Restore snapshot
 [Restoring a Snapshot to an Amazon EBS Volume](http://docs.aws.amazon.com/storagegateway/latest/userguide/RestoringSnapshotEBS.html)   
 
 
