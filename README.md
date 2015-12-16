@@ -116,8 +116,8 @@ sudo nano /etc/sysctl.conf
 
 Crear script starter.sh (en un sitio seguro, /root/blabla, hacerlo ejecutable )  
 ```bash
-nano starter.sh
-sudo chmod +x starter.sh
+$ nano starter.sh
+
 
 #Pegar este código
 #!/bin/sh
@@ -133,6 +133,11 @@ fi
 #Inicializar DreamFactory
 sudo -s /opt/lampstack/ctlscript.sh start
 sudo -s /opt/dreamfactory-2.0.2-0/ctlscript.sh start
+
+
+
+#hacerlo ejecutable
+$ sudo chmod +x starter.sh
 
 ```
 Crear un cron para ejecutar el script anterior cada vez que se apaga el servidor
