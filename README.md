@@ -16,8 +16,7 @@
   - [Automated ec2 backups](https://github.com/manviny/EC2/blob/master/README.md#automated-ec2-backups)
   - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   - [Install Ajenti](https://github.com/manviny/EC2/blob/master/README.md#ajenti)
-  - [Create user with sudo privileges](#Create user with sudo privileges)  
-  - [Create](#create-user-with-sudo-privileges)
+  - [Create user with sudo privileges](#create-user-with-sudo-privileges)
   
   
   
