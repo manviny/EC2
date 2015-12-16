@@ -4,7 +4,7 @@
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
 **(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **   
 (F) ubuntu, swap, vestacp, vesta, ODoo, DF  
-(G) UBUNTU, swap, ajenti => bitnami LAMP => , DF,  Odoo
+(G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo
 
 
 ###Indice
