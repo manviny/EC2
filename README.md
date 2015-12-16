@@ -347,3 +347,97 @@ httpd_path=/opt/bitnami/apache2/bin/httpd
 ```
  [volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
 
+##Crea web script
+### XXXXXXX is mysql pass
+```sh
+#!/bin/bash
+
+# creaweb miweb miweb.zip
+
+
+
+# 1.- Crea estructura de directorios
+sudo -u $USER mkdir -p /opt/bitnami/apps/$1/htdocs /opt/bitnami/apps/$1/conf
+
+
+# 2.- Permisos archivos y directorios para el usuario bitnami
+sudo -u $USER chown -R bitnami /opt/bitnami/apps/$1
+
+
+# 3.- descomprimir zip de la app, sino exite crea un phpinfo como 
+if [ -n "$2" ]
+then
+    unzip ./$2 /opt/bitnami/apps/$1/htdocs/
+else
+	sudo -u $USER echo '<?php phpinfo(); ?>' > /opt/bitnami/apps/$1/htdocs/index.php	
+fi
+
+
+
+
+# 4.- Crea configuración para acceder a la web http://mibitnami.com/miweb
+sudo -u $USER cat > /opt/bitnami/apps/$1/conf/$1.conf <<EOL
+Alias /$1/ "/opt/bitnami/apps/$1/htdocs/"
+Alias /$1 "/opt/bitnami/apps/$1/htdocs"
+<Directory "/opt/bitnami/apps/$1/htdocs">
+    Options Indexes MultiViews
+    AllowOverride All
+    <IfVersion < 2.3 >
+    Order allow,deny
+    Allow from all
+    </IfVersion>
+    <IfVersion >= 2.3>
+    Require all granted
+    </IfVersion>
+</Directory>
+EOL
+
+
+# 5.- Añadir en la útima linea  de la configuración de apache la nueva entrada
+echo Include "/opt/bitnami/apps/$1/conf/$1.conf" >> /opt/bitnami/apache2/conf/httpd.conf
+
+
+# 6.- Reinicializar servicio apache
+/opt/bitnami/ctlscript.sh restart apache
+
+# 7.- lista webs disponibles
+ls -ls /opt/bitnami/apps
+
+# 8.- Crear Base de datos
+echo "creando BD"
+pass=`tr -dc A-Za-z0-9 < /dev/urandom | head -c 8 | xargs`
+echo $pass
+
+# XXXXXXX is mysql pass
+mysql -u root -pXXXXXXX << EOF
+CREATE DATABASE IF NOT EXISTS $1;
+GRANT USAGE ON *.* TO $1@localhost IDENTIFIED BY '$pass';
+GRANT ALL PRIVILEGES ON $1.* TO $1@localhost;
+FLUSH PRIVILEGES;
+EOF
+
+```
+##Borra web script
+```sh
+#!/bin/bash
+
+# borraweb miweb 
+
+
+# 1.- Borra estructura de directorios
+
+sudo rm -r /opt/bitnami/apps/$1/
+
+# 2.- Quitar linea  de la configuración de apache 
+grep -v "/$1/conf/$1.conf" /opt/bitnami/apache2/conf/httpd.conf > temp && mv temp /opt/bitnami/apache2/conf/httpd.conf
+
+
+
+# 3.- Reinicializar servicio apache
+
+/opt/bitnami/ctlscript.sh restart apache
+
+# 4.- lista webs disponibles
+ls -ls /opt/bitnami/apps
+
+```
