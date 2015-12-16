@@ -112,6 +112,7 @@ then
 fi
 
 #Inicializar DreamFactory
+sudo -s /opt/lampstack/ctlscript.sh start
 sudo -s /opt/dreamfactory-2.0.2-0/ctlscript.sh start
 
 ```
@@ -219,7 +220,7 @@ apt-get install ajenti-v ajenti-v-nginx ajenti-v-mysql ajenti-v-php-fpm ajenti-v
 ```
 
 
-## VESTA
+## VESTA (conflicto con Dreamfactory)
 [fuente](http://vestacp.com/docs/#how-to-install-vesta)  
 ```bash
 wget http://vestacp.com/pub/vst-install.sh
