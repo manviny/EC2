@@ -18,7 +18,7 @@
   - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   - [Install Ajenti](https://github.com/manviny/EC2/blob/master/README.md#ajenti)
   - [Create user with sudo privileges](#create-user-with-sudo-privileges)
-  - [Restore snapshot](restore-snapshot)
+  - [Restore snapshot](#restore-snapshot)
   
   
   
