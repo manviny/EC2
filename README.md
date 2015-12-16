@@ -18,6 +18,7 @@
   - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   - [Install Ajenti](https://github.com/manviny/EC2/blob/master/README.md#ajenti)
   - [Create user with sudo privileges](#create-user-with-sudo-privileges)
+  - [Restore snapshot](restore-snapshot)
   
   
   
@@ -69,6 +70,21 @@ Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto
 
 
 [volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
+
+
+
+
+##Restore snapshot
+[Restoring a Snapshot to an Amazon EBS Volume](http://docs.aws.amazon.com/storagegateway/latest/userguide/RestoringSnapshotEBS.html)   
+
+1.-Create an Amazon EBS volume. The volume size that you specify must be greater than or equal to the size of the snapshot. To specify the snapshot to use, select its snapshot ID in the drop-down list of the Create Volume wizard in the EBS Volumes pane of the Amazon EC2 console.   
+
+2.-Attach the Amazon EBS volume to an Amazon EC2 instance (before that you need an EC2 instance).
+
+[volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
+
+
+
 ##Conectar con el servidor
 sudo ssh -i ~/.ssh/ec2.pem ubuntu@1.2.3.4  
 Abrir puertos 80, 8080 y 8069  
