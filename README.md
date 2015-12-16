@@ -208,7 +208,8 @@ $ ./ec2-automate-backup.sh -r eu-west-1 -s tag -t 'Backup=true' -k 7 -p -n
 ##AJENTI  
 [fuente](https://www.digitalocean.com/community/tutorials/how-to-install-the-ajenti-control-panel-and-ajenti-v-on-ubuntu-14-04)  
 [Create a website](https://www.digitalocean.com/community/tutorials/creating-a-website-and-an-email-account-on-ajenti-v)  
-[install email service](https://www.digitalocean.com/community/tutorials/installing-the-rainloop-email-client-on-ajenti-v)  
+[install email service](https://www.digitalocean.com/community/tutorials/installing-the-rainloop-email-client-on-ajenti-v)
+[How To Install the Ajenti Control Panel and Ajenti V on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-ajenti-control-panel-and-ajenti-v-on-ubuntu-14-04)
 ```bash
 wget -O- https://raw.github.com/ajenti/ajenti/1.x/scripts/install-ubuntu.sh | sudo sh
 # Instalar pestaña WEB
