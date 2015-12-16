@@ -77,6 +77,9 @@ Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto
 ##Restore snapshot
 [Restoring a Snapshot to an Amazon EBS Volume](http://docs.aws.amazon.com/storagegateway/latest/userguide/RestoringSnapshotEBS.html)   
 
+
+Se necesita un EC2 similar al que se va a restarurar, se hace force detach de su volumw, se crea un volume desde el snapshot y se hace un attach al ec2 indicando que el disco es /dev/sda1  
+
 1.-Create an Amazon EBS volume. The volume size that you specify must be greater than or equal to the size of the snapshot. To specify the snapshot to use, select its snapshot ID in the drop-down list of the Create Volume wizard in the EBS Volumes pane of the Amazon EC2 console.   
 
 2.-Attach the Amazon EBS volume to an Amazon EC2 instance (before that you need an EC2 instance).
