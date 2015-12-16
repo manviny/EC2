@@ -17,7 +17,7 @@
   - [Install Vesta](https://github.com/manviny/EC2/blob/master/README.md#vesta)
   - [Install Ajenti](https://github.com/manviny/EC2/blob/master/README.md#ajenti)
   - [Create user with sudo privileges](#Create user with sudo privileges)  
-  - [Create](#create)
+  - [Create](#create-user-with-sudo-privileges)
   
   
   
@@ -37,7 +37,7 @@ http://127.0.0.1:8888/rockmongo/
 http://127.0.0.1:8888/phpmyadmin/
 ```
 
-##Create user with sudo privileges
+## Create user with sudo privileges
 ```sh
 # add user  "adminuser"
 sudo adduser adminuser
