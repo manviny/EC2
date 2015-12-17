@@ -420,6 +420,16 @@ FLUSH PRIVILEGES;
 EOF
 
 ```
+
+
+chmod 644  ./site/config.php   
+
+sudo find . -type d -exec chmod 775 {} \;   
+
+sudo find . -type f -exec chmod 664 {} \;   
+
+
+
 ##Borra web script
 ```sh
 #!/bin/bash
