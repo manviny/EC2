@@ -75,7 +75,11 @@ Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto
 [volver](https://github.com/manviny/EC2/blob/master/README.md#indice)
 
 
-
+## s3cmd
+```sh
+sudo s3cmd put srcars.zip s3://bucketname
+sudo s3cmd get s3://bucketname/srcars.zip
+```
 
 ## Restore snapshot
 [Restoring a Snapshot to an Amazon EBS Volume](http://docs.aws.amazon.com/storagegateway/latest/userguide/RestoringSnapshotEBS.html)   
