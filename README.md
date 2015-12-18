@@ -23,7 +23,10 @@
   
   
   
-
+## Soft link
+```sh
+ln -s /opt/lampstack/apps/MyAPP/htdocs/site/modules /opt/lampstack/apps/PwAngular
+```
 
 ## Connect to DB through localhost
 
