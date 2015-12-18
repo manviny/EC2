@@ -25,7 +25,7 @@
   
 ## Soft link
 ```sh
-ln -s /opt/lampstack/apps/MyAPP/htdocs/site/modules /opt/lampstack/apps/PwAngular
+ln -s /opt/lampstack/apps/PwAngular /opt/lampstack/apps/MyAPP/htdocs/site/modules 
 ```
 
 ## Connect to DB through localhost
