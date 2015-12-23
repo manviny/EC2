@@ -76,10 +76,12 @@ Probar instalar por ej codiad y si funciona seguir ya con dreamfactory en puerto
 
 
 ## s3cmd
+#### move to another serve
 ```sh
-# zip -r file.zip .  -> recursive and hidden
+zip -r file.zip .  #-> recursive and hidden
 sudo s3cmd put srcars.zip s3://bucketname
 sudo s3cmd get s3://bucketname/srcars.zip
+unzip file.zip
 ```
 
 ## Restore snapshot
