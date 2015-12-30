@@ -23,6 +23,9 @@ sudo apt-get install mongodb-server
 mongod --version
 # abrir puerto 2403
 
+# arrancarlo
+dpd -d
+
 ```
 
 ##[Deployd en Ubuntu Server](http://terraltech.com/how-to-setup-deployd-on-ubuntu-server/#.VCY3GSmSwRZ)
