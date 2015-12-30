@@ -464,3 +464,17 @@ grep -v "/$1/conf/$1.conf" /opt/bitnami/apache2/conf/httpd.conf > temp && mv tem
 ls -ls /opt/bitnami/apps
 
 ```
+
+
+
+
+
+## Instalar DeployD
+```sh
+sudo apt-get install nodejs
+sudo apt-get install npm
+# Create a symbolic link for node, as many Node.js tools use this name to execute
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+sudo npm install deployd -g   # /usr/local/bin/dpd -> /usr/local/lib/node_modules/deployd/bin/dpd
+dpd -V
+```
