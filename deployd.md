@@ -24,7 +24,7 @@ mongod --version
 # abrir puerto 2403
 
 ```
-```
+
 ##[Deployd en Ubuntu Server](http://terraltech.com/how-to-setup-deployd-on-ubuntu-server/#.VCY3GSmSwRZ)
 ## Crear usuario administrador
 ```bash
