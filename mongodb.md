@@ -5,9 +5,9 @@ mongo admin --username root --password *****   #bitnami pass
 ```bash
 > mongo shell
 > use admin
-> db.addUser( { user: "deployd", pwd: "deployd", roles: [ "userAdminAnyDatabase" ] } )
+> db.createUser( { user: "deployd", pwd: "deployd", roles: [ "userAdminAnyDatabase" ] } )
 > use deployd
-> db.addUser( { user: "deployd", pwd: "deployd", roles: [ "readWrite", "dbAdmin" ] } )
+> db.createUser( { user: "deployd", pwd: "deployd", roles: [ "readWrite", "dbAdmin" ] } )
 
 ```
 
