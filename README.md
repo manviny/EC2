@@ -469,12 +469,26 @@ ls -ls /opt/bitnami/apps
 
 
 
-## Instalar DeployD
+## Instalar DeployD  
+[comandos mongodb](https://github.com/manviny/MongoDB/wiki/comandos-b%C3%A1sicos)  
 ```sh
+
+# instalar nodejs
 sudo apt-get install nodejs
+
+#instalat npm
 sudo apt-get install npm
+
 # Create a symbolic link for node, as many Node.js tools use this name to execute
 sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+# isntalar deployd
 sudo npm install deployd -g   # /usr/local/bin/dpd -> /usr/local/lib/node_modules/deployd/bin/dpd
 dpd -V
+
+# Instalar mogoDB
+sudo apt-get install mongodb-server
+mongod --version
+# abrir puerto 2403
+
 ```
