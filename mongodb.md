@@ -1,3 +1,5 @@
+mongo admin --username root --password *****   #bitnami pass   
+
 
 #Creating new user and database for our application in MongoDB
 ```bash
