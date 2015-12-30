@@ -1,9 +1,12 @@
 
-#Crear usuario para manejar todas las bases de datos
+#Creating new user and database for our application in MongoDB
 ```bash
+> mongo shell
 > use admin
-> db.auth("admin", "password")
-> db.addUser({ user:"boss", pwd:"password", roles:["userAdminAnyDatabase"] })
+> db.addUser( { user: "deployd", pwd: "deployd", roles: [ "userAdminAnyDatabase" ] } )
+> use deployd
+> db.addUser( { user: "deployd", pwd: "deployd", roles: [ "readWrite", "dbAdmin" ] } )
+
 ```
 
 #Roles de mongodb
