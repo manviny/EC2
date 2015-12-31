@@ -8,7 +8,7 @@ sudo npm install ink-docstrap -g
 cd /usr/local/lib/node_modules/jsdoc
 ```
 
-Create config.json and paste
+Create conf.json and paste
 ```json
 {
     "tags": {
@@ -35,5 +35,9 @@ Create config.json and paste
         "inverseNav"      : true
     }
 }
+```
+## create doc
+```bash
+jsdoc chatroom.js -t /usr/local/lib/node_modules/ink-docstrap/template -c /usr/local/lib/node_modules/jsdoc/conf.json
 ```
 
