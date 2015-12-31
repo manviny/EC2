@@ -1,4 +1,5 @@
 https://github.com/jsdoc3/jsdoc  
+http://usejsdoc.org/  
 http://samwize.com/2014/01/31/the-best-documentation-generator-for-node/  
 
 
@@ -41,8 +42,6 @@ Create conf.json and paste
 ## create doc
 ```bash
 jsdoc chatroom.js -t /usr/local/lib/node_modules/ink-docstrap/template -c /usr/local/lib/node_modules/jsdoc/conf.json
-# OR
-jsdoc -c /usr/local/lib/node_modules/jsdoc/conf.json -t /usr/local/lib/node_modules/ink-docstrap/template -R README.md -r .
 
 ```
 
