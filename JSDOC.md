@@ -44,4 +44,9 @@ Create conf.json and paste
 jsdoc chatroom.js -t /usr/local/lib/node_modules/ink-docstrap/template -c /usr/local/lib/node_modules/jsdoc/conf.json
 
 ```
+## Automate jsdoc
+```bash
+npm install -g grunt-cli
+npm install grunt-jsdoc --save-dev
 
+```
