@@ -9,6 +9,10 @@ change those lines
 jsdoc example.js -t /usr/local/lib/node_modules/angular-jsdoc/angular-template -c /usr/local/lib/node_modules/angular-jsdoc/common/conf.json
 
 
+https://rawgit.com/allenhwkim/angular-jsdoc/master/angular-template/docs/ngmap.MapController.html  
+
+
+
 https://github.com/jsdoc3/jsdoc  
 http://usejsdoc.org/  
 http://samwize.com/2014/01/31/the-best-documentation-generator-for-node/  
