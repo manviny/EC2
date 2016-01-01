@@ -1,3 +1,14 @@
+[angular-jsdoc ](https://github.com/allenhwkim/angular-jsdoc)  
+sudo npm install -g jsdoc angular-jsdoc --save-dev  
+
+sudo nano /usr/local/lib/node_modules/angular-jsdoc/common/conf.json  
+change those lines  
+    "/usr/local/lib/node_modules/jsdoc/plugins/markdown",  
+    "/usr/local/lib/node_modules/angular-jsdoc/common/plugins/ngdoc"  
+    
+jsdoc example.js -t /usr/local/lib/node_modules/angular-jsdoc/angular-template -c /usr/local/lib/node_modules/angular-jsdoc/common/conf.json
+
+
 https://github.com/jsdoc3/jsdoc  
 http://usejsdoc.org/  
 http://samwize.com/2014/01/31/the-best-documentation-generator-for-node/  
