@@ -28,11 +28,46 @@ creadoc.sh
 # LLAMADA  =>  
 #  $1 =>  path completo al directorio con el /js
 #  $2 =>  directorio de salida dentro de __DOCS
-#  ./creadoc.sh '/Users/manol/Development/Monaca/kuentemobile/kuenteMobile/www/js/ *.js' 'kuentemobile'																	
-cd ./$2
-jsdoc $1 -t /usr/local/lib/node_modules/angular-jsdoc/angular-template -c /usr/local/lib/node_modules/angular-jsdoc/common/conf.json
+#  ./creadoc.sh '/Users/manol/Development/Monaca/kuentemobile/kuenteMobile/www/js/ *.js' 'kuentemobile'     
+
+# VERSION 1
+# cd ./$2
+# jsdoc $1 -t /usr/local/lib/node_modules/angular-jsdoc/angular-template -c /usr/local/lib/node_modules/angular-jsdoc/common/conf.json
+# cd ../
+# open ./$2/out
+
+
+
+# VERSION 2
+# Nombre del directorio de salida en __DOCS
+app=GestorDocumental
+# Path de los ficheros js			
+camino=/Users/manol/Development/DreamFactory/GestorDocumental/app/scripts
+## declare an array variable
+declare -a subfolders=("/" "/controllers/" "/directives/" "/filters/" "/services/")
+
+
+# dependenden de donde esta instalado jsdoc
+template='-t /usr/local/lib/node_modules/angular-jsdoc/angular-template'
+config='-c /usr/local/lib/node_modules/angular-jsdoc/common/conf.json'
+
+cd /Users/manol/Development/__DOCS
+mkdir -p ${app}
+cd ./${app}
+
+
+# recorre todos los subfolders
+for i in "${subfolders[@]}"
+do
+   jsdoc ${camino}$i *.js ${template} ${config}
+done
+
+
+
+
+# ABRE EL PROYECTO EN FINDER
 cd ../
-open ./$2/out
+open ./${app}/out
 ```
 automator -> nombreapp
 ```bash
