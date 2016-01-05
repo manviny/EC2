@@ -13,10 +13,10 @@ $ bower install angular-material-icons --save
 ```
 # Install dreamfactory login/register
 
-1. bower install manviny/mny_leaflet --save  
+1. bower install manviny/manviny.dflogin --save  
 2. check that all js and css libraries are loaded  
-3. inject 'manviny.mny-leaflet' into your app module  
-4. add  mnymapa to your controller  
+3. inject 'manviny.dflogin' into your app module  
+4. add 'LoginCtrl','RegisterController' to your controller  
 5. start using it  
 
 ## use example 
