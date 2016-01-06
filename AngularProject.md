@@ -2,7 +2,7 @@
 ```bash
 $ yo (name of app)
 $ # angular material
-$ bower install angular-amterial --save
+$ bower install angular-material --save
 $ # Dreamfactory login/register
 $ bower install manviny/manviny.dreamfactory --save
 $ # angular material layout
