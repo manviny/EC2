@@ -1,4 +1,4 @@
-# New anglar APP
+# New angular APP
 ```bash
 $ yo (name of app)
 $ # angular material
