@@ -14,3 +14,10 @@ $ npm install --global npm@latest
 # instalar el generador de angular
 $ npm install --global generator-angular generator-karma
 ```
+# Usar  yeoman para crear web
+
+
+```bash
+# 
+$ yo
+```
