@@ -1,7 +1,7 @@
 # Instalar Nodejs y Git
 
 Descargar [nodejs](https://nodejs.org/en/)  
-Descargar [git](https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe)
+Descargar [git](https://github.com/git-for-windows/git/releases/download/v2.7.0.windows.1/Git-2.7.0-64-bit.exe) e instalar versión linux
 # Instalar yeoman
 
 Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html)  
