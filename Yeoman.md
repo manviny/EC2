@@ -21,5 +21,7 @@ $ npm install --global generator-angular generator-karma
 
 ```bash
 # 
+$ mkdir micarpeta
+$ cd micarpeta
 $ yo
 ```
