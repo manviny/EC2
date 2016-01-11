@@ -9,5 +9,8 @@ Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html)
 Abrir powershell desde el botón de inicio de windows.  
 Actuaklizar 
 ```bash
-npm install --global npm@latest
+# actualizar npm a la última versión (instalador de paquetes)
+$ npm install --global npm@latest
+# instalar el generador de angular
+$ npm install --global generator-angular generator-karma
 ```
