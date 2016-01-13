@@ -7,11 +7,13 @@ Descargar [git](https://github.com/git-for-windows/git/releases/download/v2.7.0.
 Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html)  
 
 Abrir powershell desde el botón de inicio de windows.  
-Actuaklizar 
+Actualizar 
 ```bash
 # actualizar npm a la última versión (instalador de paquetes)
 $ npm install --global npm@latest
-# isntalar git
+
+# instalar herramientas de yeoman
+$ npm install --global yo bower grunt-cli
 
 # instalar el generador de angular
 $ npm install --global generator-angular generator-karma
