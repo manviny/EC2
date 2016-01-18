@@ -3,8 +3,6 @@
 
 Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html) o bien los pasos del cuadro gris a continuación
 
-Abrir powershell desde el botón de inicio de windows.  
-Actualizar 
 ```bash
 # PASO 1
 $ descargar e instalar MEAN -> # https://bitnami.com/redirect/to/86975/bitnami-meanstack-3.2.1-0-windows-installer.exe
