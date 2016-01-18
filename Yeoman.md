@@ -1,7 +1,7 @@
 
 # Instalar yeoman
 
-Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html)  
+Seguir los pasos de [yeoman](http://yeoman.io/codelab/setup.html) o bien los pasos del cuadro gris a continuación
 
 Abrir powershell desde el botón de inicio de windows.  
 Actualizar 
