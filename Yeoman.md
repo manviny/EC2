@@ -12,6 +12,15 @@ $ npm install --global yo bower grunt-cli
 
 # PASO 3 instalar el generador de angular
 $ npm install --global generator-angular generator-karma
+
+#PASO 4 comprobar que tenemos todo lo necesario instalado
+$ node --version
+$ npm --version
+$ git --version
+$ yo --version 
+$ bower --version
+$ grunt --version
+
 ```
 # Usar  yeoman para crear web
 
