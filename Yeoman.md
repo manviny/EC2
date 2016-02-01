@@ -31,3 +31,11 @@ $ mkdir micarpeta
 $ cd micarpeta
 $ yo
 ```
+
+# Clonar repositorio
+```bash
+# Después de clonar el repositorio a nuestro ordenador
+$ npm install
+$ bower install
+```
+
