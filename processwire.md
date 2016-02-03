@@ -11,9 +11,18 @@
 ## Instalar todos los ficheros CSS y JS necesarios para esta plantilla
 1. Arrastramos todos los css a nuestra carpeta de styles y los js a scripts
 2. Ahora en todas las lineas, tanto de css como de js sustituiremos de la siguiente forma
-    donde ponga por ejemplo: ccs/bootstrap.min.css  =>  <?php echo $config->urls->templates?>styles/bootstrap.min.css  
+```php
+    # donde ponga por ejemplo: ccs/bootstrap.min.css  =>  
+    <?php echo $config->urls->templates?>css/bootstrap.min.css  
+    # 
+```
 
+## logo y fuentes
+1. Si tenemos un logo o fuentes debemos seguir los mismos pasos que en el caso de css y js  
 
+## Páginas
+Ahora podemos ya empezar a crear cada página de nuestra web.  
+La página principal es home.php (inicio, portada)  
 
 
 
