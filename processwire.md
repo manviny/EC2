@@ -25,4 +25,25 @@ Ahora podemos ya empezar a crear cada página de nuestra web.
 La página principal es home.php (inicio, portada)  
 
 
+## Cambiar el idioma
 
+
+## Instalar angular
+1. Necesitamos instalar el módulo Pages2JSON
+2. Crear carpeta PwAngular en C:/bitnami/processwire/apps/processwire/htdocs/site/modules
+3. Poner el contenido de https://github.com/manviny/processgular/tree/master
+
+ ## Vamos a probarlo
+ ```php
+ 
+    ## Despues del </head> poner
+     <script>
+      app.controller('TopCtrl', function ($scope, toastr, $http, PW) {
+   
+        toastr.info( 'Bienvenido ' + userData.name ,{timeOut:4000});
+
+      });
+    </script> 
+    
+    <body   ng-controller="TopCtrl">
+ ```
