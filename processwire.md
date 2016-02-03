@@ -33,17 +33,21 @@ La página principal es home.php (inicio, portada)
 2. Crear carpeta PwAngular en C:/bitnami/processwire/apps/processwire/htdocs/site/modules
 3. Poner el contenido de https://github.com/manviny/processgular/tree/master
 
- ## Vamos a probarlo
+ ## Vamos a probarlo en home.php
  ```php
  
-    ## Despues del </head> poner
-     <script>
-      app.controller('TopCtrl', function ($scope, toastr, $http, PW) {
-   
-        toastr.info( 'Bienvenido ' + userData.name ,{timeOut:4000});
+    ## Pegar este código
+<script>
+    app.controller('HomeCtrl', function ($scope, PW) {
 
-      });
-    </script> 
-    
-    <body   ng-controller="TopCtrl">
+     	$scope.saluda = function(){
+     		alert('hola')
+     	}
+
+    });
+</script>
+
+<div class="container" ng-controller="HomeCtrl">
+	<button ng-click="saluda()">saluda</button>
+</div>
  ```
