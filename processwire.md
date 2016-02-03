@@ -49,7 +49,7 @@ La página principal es home.php (inicio, portada)
     app.controller('HomeCtrl', function ($scope, PW) {
 
      	$scope.saluda = function(){
-     		alert('hola')
+     		toastr.info( 'Bienvenido '  ,{timeOut:4000});
      	}
 
     });
