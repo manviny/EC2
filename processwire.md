@@ -28,7 +28,7 @@ Ahora podemos ya empezar a crear cada página de nuestra web.
 La página principal es home.php (inicio, portada)  
 
 
-## Cambiar el idioma
+## Cambiar el idioma [video](https://youtu.be/lWXvyRH2tpw)
 1. En el menú principal: Modules > Core y activar "Languages Support"
 2. Ahora desde el menu principal ir a Setup y Languages, add new
 3. tanto es title como name poner **es**
