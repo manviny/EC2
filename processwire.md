@@ -1,3 +1,6 @@
+## Preparar sublime text para acceder a nuestros ficheros
+
+
 ## Arrastrar a sublime text los ficheros que necesitamos para nuestra nueva web.
 1. Arrastramos la carpeta templates hasta sublime text  C:/bitnami/processwire/apps/processwire/htdocs/site/templates   
 
