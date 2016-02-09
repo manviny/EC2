@@ -13,7 +13,8 @@
 
 ## Instalar todos los ficheros CSS y JS necesarios para esta plantilla
 1. Arrastramos todos los css a nuestra carpeta de styles y los js a scripts ( por SFTP hacer upload folder)
-2. Ahora en todas las lineas, tanto de css como de js sustituiremos de la siguiente forma
+2. Hacer lo mismo con font e images
+3. Ahora en todas las lineas, tanto de css como de js sustituiremos de la siguiente forma
 ```php
     # donde ponga por ejemplo: ccs/bootstrap.min.css  =>  
     <?php echo $config->urls->templates?>css/bootstrap.min.css  
