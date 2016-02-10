@@ -1,3 +1,13 @@
+## Conexión puente a BD
+MySQL y RockMongo mediante conexión puente  
+
+
+sudo ssh -N -L 8888:127.0.0.1:80 -i ~/.ssh/bitnami-hosting.pem bitnami@deployd.bitnamiapp.com  
+
+acceder a las bases de datos  
+http://127.0.0.1:8888/rockmongo/  
+http://127.0.0.1:8888/phpmyadmin/  
+
 ## Conectar sublime text con servidor creado con bitnami [video](https://youtu.be/mAgvZ-dyPWQ)
 
 
