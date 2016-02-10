@@ -1,5 +1,8 @@
 ## Conectar sublime text con servidor creado con bitnami [video](https://youtu.be/mAgvZ-dyPWQ)
 
+
+## Script para instalar web en servidor creado con bitnami [enlace](https://processwire.com/talk/topic/9858-script-to-create-new-pw-in-bitnami-stack/)
+
 ## Preparar sublime text para acceder a los ficheros de nuestra web en AWS
 1. Descarga la llave .ppk desde nuestra consola de bitnami (servidor > manage > connect)
 
