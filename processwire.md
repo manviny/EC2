@@ -15,7 +15,7 @@ $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
 Ahora estamos en el terminal que comunica con nuestro servidor
 ```sh
-$ cd
+$ cd   #debemos estar en /home/bitnami
 $ sudo nano creaweb.sh
 
 ```
