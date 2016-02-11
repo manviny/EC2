@@ -29,6 +29,7 @@ $ cd apps/miweb/htdocs
 $ wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
 $ sudo unzip master.zip
 $ sudo mv ProcessWire-master/* ./
+$ sudo mv site-classic site
 
 
 ```
