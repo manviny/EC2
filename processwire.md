@@ -18,6 +18,8 @@ Ahora estamos en el terminal que comunica con nuestro servidor
 $ cd   
 $ pwd          #debemos estar en /home/bitnami
 $ sudo nano creaweb.sh
+# Pegamos todos el script del cuadro de abajo
+# Y pulsamos Ctrl+X y seguidamente Y
 
 ```
 
