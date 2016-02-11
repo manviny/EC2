@@ -1,5 +1,11 @@
 ## Conexión puente a BD
 MySQL y RockMongo mediante conexión puente  
+sudo ssh -N -L 8888:127.0.0.1:80 -i ~/.ssh/bitnami-hosting.pem bitnami@deployd.bitnamiapp.com  
+
+acceder a las bases de datos  
+http://127.0.0.1:8888/rockmongo/  
+http://127.0.0.1:8888/phpmyadmin/  
+
 
 ## Instalar nuevas webs en nuestro servidor
 Para windows usar putty [video](https://youtu.be/lxKQ3Sq47mc)     
@@ -7,11 +13,7 @@ Para Mac o Linux usar desde un terminal:
 ```sh
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
-sudo ssh -N -L 8888:127.0.0.1:80 -i ~/.ssh/bitnami-hosting.pem bitnami@deployd.bitnamiapp.com  
 
-acceder a las bases de datos  
-http://127.0.0.1:8888/rockmongo/  
-http://127.0.0.1:8888/phpmyadmin/  
 
 
 ## Creaweb.sh
