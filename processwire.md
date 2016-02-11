@@ -27,7 +27,8 @@ $ sudo ./creaweb.sh miweb
 # Vamos a descargar Processwire
 $ cd apps/miweb/htdocs
 $ wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
-$ unzip master.zip
+$ sudo unzip master.zip
+$ sudo mv ProcessWire-master/* ./
 
 
 ```
