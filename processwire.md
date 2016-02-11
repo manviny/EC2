@@ -19,6 +19,8 @@ $ cd
 $ pwd          #debemos estar en /home/bitnami
 $ sudo nano creaweb.sh
 # Pegamos todos el script del cuadro de abajo
+# en la 6 linea por el final -> mysql -u root -p********* << EOF, sustituimos los asteriscos por nuestro password.
+# el password lo tenemos en la consola de bitnami Server > properties > application credentials
 # Y pulsamos Ctrl+X y seguidamente Y
 
 ```
