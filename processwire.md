@@ -2,9 +2,9 @@
 MySQL y RockMongo mediante conexión puente  
 
 ## Instalar nuevas webs en nuestro servidor
+Para windows usar putty (video)[https://youtu.be/lxKQ3Sq47mc]  
+Para Mac o Linux usar desde un terminal:  
 ```sh
-# Para windows usar putty (video)[https://youtu.be/lxKQ3Sq47mc]
-# Para Mac o Linux usar desde un terminal:
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
 sudo ssh -N -L 8888:127.0.0.1:80 -i ~/.ssh/bitnami-hosting.pem bitnami@deployd.bitnamiapp.com  
