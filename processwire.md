@@ -30,7 +30,11 @@ $ wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
 $ sudo unzip master.zip
 $ sudo mv ProcessWire-master/* ./
 $ sudo mv site-classic site
+# change permissions to install
 
+$ sudo chmod 777 -R ./site/assets ./site/modules
+$ sudo chmod 777 ./site/config.php
+$ sudo mv htaccess.txt .htaccess
 
 ```
 
