@@ -149,10 +149,16 @@ La página principal es home.php (inicio, portada)
 9. Al final seleccionamos es y ya tenemos el idioma preferido.
 
 ## Instalar angular
-1. Necesitamos instalar el módulo Pages2JSON
-2. Crear carpeta PwAngular en C:/bitnami/processwire/apps/processwire/htdocs/site/modules
-3. Poner el contenido de https://github.com/manviny/processgular/tree/master
-
+ ```bash
+# Necesitamos instalar el módulo Pages2JSON
+# Crear carpeta PwAngular en C:/bitnami/processwire/apps/MIWEB/htdocs/site/modules
+$ cd /home/bitnami/apps/MIWEB/htdocs/site/modules
+$ mkdir PwAngular
+$ cd PwAngular
+$ wget https://github.com/manviny/processgular/archive/master.zip
+$ unzip master.zip
+Poner el contenido de https://github.com/manviny/processgular/tree/master
+```
  ## Vamos a probarlo en home.php
  ```php
  
