@@ -13,7 +13,12 @@ Para Mac o Linux usar desde un terminal:
 ```sh
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
+Ahora estamos en el terminal que comunica con nuestro servidor
+```sh
+$ cd
+$ sudo nano creaweb.sh
 
+```
 
 
 ## Creaweb.sh
