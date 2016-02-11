@@ -24,6 +24,9 @@ $ sudo nano creaweb.sh
 # Y pulsamos Ctrl+X y seguidamente Y
 $ sudo chmod +x creaweb.sh    # anotamos el password generado de ls BD
 $ sudo ./creaweb.sh miweb
+# Vamos a descargar Processwire
+$ cd apps/miweb/htdocs
+$ wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
 
 ```
 
