@@ -36,6 +36,11 @@ $ sudo chmod 777 -R ./site/assets ./site/modules
 $ sudo chmod 777 ./site/config.php
 $ sudo mv htaccess.txt .htaccess
 
+
+$ sudo chmod 644  ./site/config.php
+$ sudo find . -type d -exec chmod 775 {} \;
+$ sudo find . -type f -exec chmod 664 {} \;
+$ sudo chown -R bitnami:daemon ./*
 ```
 
 
