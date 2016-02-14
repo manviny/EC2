@@ -1,9 +1,11 @@
 #!/bin/bash
 
 cd
-sudo rm borraPW.sh creaPW.sh finalizaPW.sh
+sudo rm borraPW.sh creaPW.sh finalizaPW.sh PwAngular.sh
 wget https://raw.githubusercontent.com/manviny/EC2/master/creaPW.sh  && sudo chmod +x creaPW.sh
 wget https://raw.githubusercontent.com/manviny/EC2/master/finalizaPW.sh  && sudo chmod +x finalizaPW.sh
 wget https://raw.githubusercontent.com/manviny/EC2/master/borraPW.sh  && sudo chmod +x borraPW.sh
+wget https://raw.githubusercontent.com/manviny/EC2/master/PwAngular.sh  && sudo chmod +x PwAngular.sh
+
 sudo rm ./PwScripts.sh
 echo "Se han instalado los scripts creaWeb.sh, borraPw.sh y finalizaPW.sh"
