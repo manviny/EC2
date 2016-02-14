@@ -2,7 +2,13 @@
 
 # creaweb nombreweb dbpass 
 
-
+if [ -n "$2" ]
+then
+    echo "Procedemos a instalar"
+else 
+    echo "Saliendo, falta password de la base de datos"
+    exit
+fi
 
 # 1.- Crea estructura de directorios
 sudo -u $USER mkdir -p /opt/bitnami/apps/$1/htdocs /opt/bitnami/apps/$1/conf
