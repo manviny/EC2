@@ -44,6 +44,17 @@ Desde el administrador de processwire
 Módulos, nuevo, nombre de la clase:  
 Pages2JSON   
 
+###Listo ahora podemos trabajar con angular y processwire, mira el siguiente ejemplo básico
+```php
+<script>
+    app.controller('ZapatosCtrl', function ($scope) { 
+        $scope.page = <?=$page->toJSON()?>;
+    });
+</script>
+<div id="wrapper" ng-controller="BlogCtrl">
+    <h1>{{page.title}}</h1>
+</div>
+```
 
 
 ## Conectar sublime text con servidor creado con bitnami [video](https://youtu.be/mAgvZ-dyPWQ)
