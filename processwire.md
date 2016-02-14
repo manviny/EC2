@@ -8,7 +8,9 @@ http://127.0.0.1:8888/phpmyadmin/
 
 
 ## Instalar nuevas webs en nuestro servidor [PW](https://processwire.com/talk/topic/9858-script-to-create-new-pw-in-bitnami-stack/)
-Para windows usar putty [video](https://youtu.be/lxKQ3Sq47mc)     
+Para windows usar putty [video](https://youtu.be/lxKQ3Sq47mc) 
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/lxKQ3Sq47mc)
+
 Para Mac o Linux usar desde un terminal:  
 ```sh
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
