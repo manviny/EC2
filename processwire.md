@@ -25,7 +25,7 @@ $ pwd          #debemos estar en /home/bitnami
 # Descargamos una sola vez el script para crear la estructura de la web y BD
 $ wget https://raw.githubusercontent.com/manviny/EC2/master/PwScripts.sh && sudo chmod +x PwScripts.sh  && ./PwScripts.sh
 # Ahora podemos crear una nueva web con: sudo ./creaPW.sh seguido de nombreWeb y DBpass
-$ sudo ./creaPW.sh miweb dbpass
+$ sudo ./creaPW.sh miweb **dbpass**
 ```
 ###Ahora tenemos la web disponible para configurar
 1. Ir al navegador y ponemos la url: usuario.bitnamiapp.com/miweb  
