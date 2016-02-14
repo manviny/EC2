@@ -35,6 +35,15 @@ $ sudo ./creaPW.sh miweb **dbpass**
 5. en **User**, **Password**,  **mail**,ponemos nuestros datos para poder acceder al administrador
 6. Volver al terminal y escribir sudo ./finaliza.sh miweb
 
+###Instalar Angular y otras utilidades
+```sh
+$ sudo ./PwAngular.sh miweb
+````
+###Instalar el módulo de necesario Pages2JSON
+Desde el administrador de processwire   
+Módulos, nuevo, nombre de la clase:  
+Pages2JSON   
+
 
 
 ## Conectar sublime text con servidor creado con bitnami [video](https://youtu.be/mAgvZ-dyPWQ)
