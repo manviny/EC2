@@ -13,42 +13,24 @@ Para Mac o Linux usar desde un terminal:
 ```sh
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
-Ahora estamos en el terminal que comunica con nuestro servidor
+###Ahora estamos en el terminal que comunica con nuestro servidor
 ```sh
 # Debemos asegurarnos de estar en la ruta correcta (/home/bitnami), vamos a comprobarlo
 $ cd   
 $ pwd          #debemos estar en /home/bitnami
 
 # Descargamos una sola vez el script para crear la estructura de la web y BD
-$ wget https://gist.githubusercontent.com/manviny/13ccc74be6e3fbe4c706/raw/6b02b7ebd09e58b79fdac54e8e4ce1abcfc3e903/creaweb.sh && sudo chmod +x creaweb.sh
+$ wget https://gist.githubusercontent.com/manviny/13ccc74be6e3fbe4c706/raw/c88bd1e42463e8e05947c7061a1a8f236a51dccd/creaweb.sh && sudo chmod +x creaweb.sh
 
-# Ahora podemos crear una nueva web con sudo ./creaweb.sh seguido de tres parámetros
-# 1.- nombre de la web  ( letras minúsculas sin espacios )
-# 2.- password de la base de datos
-# 3.- zip con la web que queremos descargar
-
-
-$ sudo ./creaweb.sh miweb dbpass https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
-$ sudo nano creaweb.sh
-# Pegamos todos el script del cuadro de abajo
-# en la 6 linea por el final -> mysql -u root -p********* << EOF, sustituimos los asteriscos por nuestro password.
-# el password lo tenemos en la consola de bitnami Server > properties > application credentials
-# Y pulsamos Ctrl+X y seguidamente Y
-$ sudo chmod +x creaweb.sh    # anotamos el password generado de ls BD
-$ sudo ./creaweb.sh miweb
-# Vamos a descargar Processwire
-$ cd apps/miweb/htdocs
-$ wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
-$ sudo unzip master.zip
-$ sudo mv ProcessWire-master/* ./
-$ sudo mv site-classic site
-# change permissions to install
-
-$ sudo chmod 777 -R ./site/assets ./site/modules
-$ sudo chmod 777 ./site/config.php
-$ sudo mv htaccess.txt .htaccess
+# Ahora podemos crear una nueva web con: sudo ./creaweb.sh seguido de nombreWeb y DBpass
+$ sudo ./creaweb.sh miweb dbpass
+```
+###Ahora tenemos la web disponible para configurar
+1. Ir al navegador y ponemos la url: usuario.bitnamiapp.com/miweb  
+2.  
 
 
+```sh
 $ sudo chmod 644  ./site/config.php
 $ sudo find . -type d -exec chmod 775 {} \;
 $ sudo find . -type f -exec chmod 664 {} \;
@@ -56,73 +38,6 @@ $ sudo chown -R bitnami:daemon ./*
 ```
 
 
-## Creaweb.sh
-```bash
-#!/bin/bash
-
-# creaweb miweb miweb.zip
-
-
-
-# 1.- Crea estructura de directorios
-sudo -u $USER mkdir -p /opt/bitnami/apps/$1/htdocs /opt/bitnami/apps/$1/conf
-
-
-# 2.- Permisos archivos y directorios para el usuario bitnami
-sudo -u $USER chown -R bitnami /opt/bitnami/apps/$1
-
-
-# 3.- descomprimir zip de la app, sino exite crea un phpinfo como 
-if [ -n "$2" ]
-then
-    unzip ./$2 /opt/bitnami/apps/$1/htdocs/
-else
-	sudo -u $USER echo '<?php phpinfo(); ?>' > /opt/bitnami/apps/$1/htdocs/index.php	
-fi
-
-
-
-
-# 4.- Crea configuración para acceder a la web http://mibitnami.com/miweb
-sudo -u $USER cat > /opt/bitnami/apps/$1/conf/$1.conf <<EOL
-Alias /$1/ "/opt/bitnami/apps/$1/htdocs/"
-Alias /$1 "/opt/bitnami/apps/$1/htdocs"
-<Directory "/opt/bitnami/apps/$1/htdocs">
-    Options Indexes MultiViews
-    AllowOverride All
-    <IfVersion < 2.3 >
-    Order allow,deny
-    Allow from all
-    </IfVersion>
-    <IfVersion >= 2.3>
-    Require all granted
-    </IfVersion>
-</Directory>
-EOL
-
-
-# 5.- Añadir en la útima linea  de la configuración de apache la nueva entrada
-echo Include "/opt/bitnami/apps/$1/conf/$1.conf" >> /opt/bitnami/apache2/conf/httpd.conf
-
-
-# 6.- Reinicializar servicio apache
-/opt/bitnami/ctlscript.sh restart apache
-
-# 7.- lista webs disponibles
-ls -ls /opt/bitnami/apps
-
-# 8.- Crear Base de datos
-echo "creando BD"
-pass=`tr -dc A-Za-z0-9 < /dev/urandom | head -c 8 | xargs`
-echo $pass
-
-mysql -u root -p********* << EOF
-CREATE DATABASE IF NOT EXISTS $1;
-GRANT USAGE ON *.* TO $1@localhost IDENTIFIED BY '$pass';
-GRANT ALL PRIVILEGES ON $1.* TO $1@localhost;
-FLUSH PRIVILEGES;
-EOF
-```
 
 ##borraweb.sh
 ```bash
