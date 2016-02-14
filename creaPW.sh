@@ -58,7 +58,7 @@ echo Include "/opt/bitnami/apps/$1/conf/$1.conf" >> /opt/bitnami/apache2/conf/ht
 
 
 # 6.- Reinicializar servicio apache
-/opt/bitnami/ctlscript.sh restart apache
+sudo /opt/bitnami/ctlscript.sh restart apache
 
 # 7.- lista webs disponibles
 #ls -ls /opt/bitnami/apps
