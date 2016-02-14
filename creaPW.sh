@@ -74,6 +74,8 @@ echo "Tu usuario es: "$1
 echo "El nombre de la base de datos es: "$1
 pass=`tr -dc A-Za-z0-9 < /dev/urandom | head -c 8 | xargs`
 echo "El password de la base de datos es: " $pass
+# vuelve a la raiz /home/binami
+cd
 
 mysql -u root -p$2 << EOF
 CREATE DATABASE IF NOT EXISTS $1;
