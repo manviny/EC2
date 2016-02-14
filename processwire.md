@@ -13,7 +13,7 @@ Para Mac o Linux usar desde un terminal:
 ```sh
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
-###Ahora estamos en el terminal que comunica con nuestro servidor
+###Desde el terminal que comunica con nuestro servidor
 ```sh
 # Debemos asegurarnos de estar en la ruta correcta (/home/bitnami), vamos a comprobarlo
 $ cd   
@@ -27,7 +27,7 @@ $ sudo ./creaweb.sh miweb dbpass
 ```
 ###Ahora tenemos la web disponible para configurar
 1. Ir al navegador y ponemos la url: usuario.bitnamiapp.com/miweb  
-2. Rellenamos los datos de la base de datos **DB Name**, **DB USer** y **DB Pass**
+2. Rellenamos los datos de la base de datos **DB Name**, **DB USer** y **DB Pass** con los datos generados en el script anterior.
 3. **Default Time Zone** seleccionamos Europe/Madrid
 4. Pasamos a la siguiente pantalla y en **Admin Panel Information** ponemos **admin**
 5. en **User**, **Password**,  **mail**,ponemos nuestros datos para poder acceder al administrador
