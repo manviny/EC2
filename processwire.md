@@ -20,10 +20,11 @@ $ cd
 $ pwd          #debemos estar en /home/bitnami
 
 # Descargamos una sola vez el script para crear la estructura de la web y BD
-$ wget https://gist.githubusercontent.com/manviny/13ccc74be6e3fbe4c706/raw/c88bd1e42463e8e05947c7061a1a8f236a51dccd/creaweb.sh && sudo chmod +x creaweb.sh
+$ wget https://gist.githubusercontent.com/manviny/459d7fd7e234540a0786/raw/9b79adcbc1c4f6d28d3b129b4f63ad3e7da557b7/creaPW.sh && sudo chmod +x creaPW.sh
+$ wget https://gist.githubusercontent.com/manviny/459d7fd7e234540a0786/raw/9b79adcbc1c4f6d28d3b129b4f63ad3e7da557b7/finaliza.sh  && sudo chmod +x finaliza.sh
 
-# Ahora podemos crear una nueva web con: sudo ./creaweb.sh seguido de nombreWeb y DBpass
-$ sudo ./creaweb.sh miweb dbpass
+# Ahora podemos crear una nueva web con: sudo ./creaPW.sh seguido de nombreWeb y DBpass
+$ sudo ./creaPW.sh miweb dbpass
 ```
 ###Ahora tenemos la web disponible para configurar
 1. Ir al navegador y ponemos la url: usuario.bitnamiapp.com/miweb  
@@ -31,14 +32,7 @@ $ sudo ./creaweb.sh miweb dbpass
 3. **Default Time Zone** seleccionamos Europe/Madrid
 4. Pasamos a la siguiente pantalla y en **Admin Panel Information** ponemos **admin**
 5. en **User**, **Password**,  **mail**,ponemos nuestros datos para poder acceder al administrador
-
-
-```sh
-$ sudo chmod 644  ./site/config.php
-$ sudo find . -type d -exec chmod 775 {} \;
-$ sudo find . -type f -exec chmod 664 {} \;
-$ sudo chown -R bitnami:daemon ./*
-```
+6. Volver al terminal y escribir sudo ./finaliza.sh miweb
 
 
 
