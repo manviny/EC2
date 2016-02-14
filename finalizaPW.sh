@@ -1,5 +1,11 @@
 #!/bin/bash
-
+if [ -n "$1" ]
+then
+    echo "Procedemos a fijar permisos"
+else 
+    echo "Saliendo, falta nombre de la web"
+    exit
+fi
 cd /home/bitnami/apps/$1/htdocs
 sudo chmod 655  ./site/config.php
 sudo find . -type d -exec chmod 775 {} \;
