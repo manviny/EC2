@@ -27,7 +27,10 @@ $ sudo ./creaweb.sh miweb dbpass
 ```
 ###Ahora tenemos la web disponible para configurar
 1. Ir al navegador y ponemos la url: usuario.bitnamiapp.com/miweb  
-2.  
+2. Rellenamos los datos de la base de datos **DB Name**, **DB USer** y **DB Pass**
+3. **Default Time Zone** seleccionamos Europe/Madrid
+4. Pasamos a la siguiente pantalla y en **Admin Panel Information** ponemos **admin**
+5. en **User**, **Password**,  **mail**,ponemos nuestros datos para poder acceder al administrador
 
 
 ```sh
