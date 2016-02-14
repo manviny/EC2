@@ -18,9 +18,13 @@ Ahora estamos en el terminal que comunica con nuestro servidor
 # Debemos asegurarnos de estar en la ruta correcta (/home/bitnami), vamos a comprobarlo
 $ cd   
 $ pwd          #debemos estar en /home/bitnami
+
 # Descargamos una sola vez el script para crear la estructura de la web y BD
 $ wget https://gist.githubusercontent.com/manviny/13ccc74be6e3fbe4c706/raw/6b02b7ebd09e58b79fdac54e8e4ce1abcfc3e903/creaweb.sh
+
+# Damos permisos de ejecución al script
 $ sudo chmod +x creaweb.sh
+
 # Ahora podemos crear una nueva web con sudo ./creaweb.sh seguido de tres parámetros
 # 1.- nombre de la web  ( letras minúsculas sin espacios )
 # 2.- password de la base de datos
