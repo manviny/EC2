@@ -12,8 +12,11 @@ fi
 cd /opt/bitnami/apps/$1/htdocs/site/modules
 rm -rf ./PwAngular
 mkdir PwAngular 
+cd PwAngular
 wget https://github.com/manviny/manviny.PwAngular/archive/master.zip  
 unzip master.zip
+sudo mv manviny.PwAngular-master/* ./
+rm master.zip
 
 
 echo "Se han instalado PwAngular"
