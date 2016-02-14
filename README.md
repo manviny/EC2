@@ -1,3 +1,13 @@
+Webmin + PW  
+
+1. Crear servidor virtual
+2. descargar zip y descomprimir
+3. comentar linea #Options +FollowSymLinks
+4. configurar en el servidor usuario y BD
+5. Webmin > system > users and groups > añadir el grupo de la nueva web a el usuario ubuntu    
+
+
+
 (A) lamp bitnami ami, swap, df, odoo, webmin y configurarlo, restart, virtualmin  
 (B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin   
 (C) LAMP bitnami AMI swap webmin virtualmin y luego DF u ODoo  
