@@ -1,7 +1,13 @@
 #!/bin/bash
 
 # borraweb miweb 
-
+if [ -n "$1" ]
+then
+    echo "Procedemos a borrar"
+else 
+    echo "Saliendo, falta nombre de la web a borrar"
+    exit
+fi
 
 # 1.- Borra estructura de directorios
 
