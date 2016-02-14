@@ -51,7 +51,7 @@ Pages2JSON
         $scope.page = <?=$page->toJSON()?>;
     });
 </script>
-<div id="wrapper" ng-controller="BlogCtrl">
+<div id="wrapper" ng-controller="ZapatosCtrl">
     <h1>{{page.title}}</h1>
 </div>
 ```
