@@ -54,6 +54,8 @@ $ sudo nano config.php
   
 1. Módulos > nuevo > nombre de la clase > Pages2JSON    
 2. Pegar este código en nuestra web   
+ 
+_init.php
 ```php
 <html>
   <head>
@@ -63,16 +65,24 @@ $ sudo nano config.php
     <script>var app=angular.module('myApp',['ngRoute'])</script>
   </head>
   <body ng-app="myApp">
-
-<script>app.controller('HomeCtrl',function($scope){$scope.page={"title":"Home"};});</script>
+```
+home.php
+```php
+<script>
+  app.controller('HomeCtrl',function($scope){
+      $scope.page={"title":"Home"};
+  });
+</script>
 
 <div ng-controller="HomeCtrl">
 	<h1>hi there {{page.title}}</h1>
 </div>
+```
+_main.php
+```php
   </body>
 </html>
 ```
-  
 ## Conectar sublime text con servidor creado con bitnami [video](https://youtu.be/mAgvZ-dyPWQ)
 
 
