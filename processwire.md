@@ -51,13 +51,18 @@ $ sudo nano config.php
 # Para guardar Ctrl+X y luego Y+enter
 ```
 ###Instalar Angular y otras utilidades
+Pasos previos:  
+1. Activar Language support  ( modules > install > Languages Support > Install
+2. Módulos > nuevo > nombre de la clase > Pages2JSON  
+3. Desde el terminal
 ```sh
+$ cd
 $ sudo ./PwAngular.sh miweb
-````
-###Instalar el módulo de necesario Pages2JSON
-Desde el administrador de processwire   
-Módulos, nuevo, nombre de la clase:  
-Pages2JSON   
+```
+Desde el navegador:   
+1. Modules > Refresh (botón)
+2. Pw and AngularJS > install (botón)
+ 
 
 ###Listo ahora podemos trabajar con angular y processwire, mira el siguiente ejemplo básico
 ```php
