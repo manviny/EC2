@@ -17,7 +17,7 @@ Para Mac o Linux usar desde un terminal:
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
 ###Desde el terminal que comunica con nuestro servidor
-####Preparación del entorno, esto se hace únicamente la primera vez.
+Preparación del entorno, esto se hace únicamente la primera vez.   
 ```sh
 # Debemos asegurarnos de estar en la ruta correcta (/home/bitnami), vamos a comprobarlo
 $ cd   
