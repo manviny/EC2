@@ -33,7 +33,8 @@ $ sudo ./creaPW.sh miweb **dbpass**
 3. **Default Time Zone** seleccionamos Europe/Madrid
 4. Pasamos a la siguiente pantalla y en **Admin Panel Information** ponemos **admin**
 5. en **User**, **Password**,  **mail**,ponemos nuestros datos para poder acceder al administrador
-6. Volver al terminal y escribir sudo ./finaliza.sh miweb
+6. Volver al terminal y escribir sudo ./finalizaPW.sh miweb
+7. Para **BORRAR** una web sudo ./borraPW.sh miweb
 
 ###Instalar Angular y otras utilidades
 ```sh
