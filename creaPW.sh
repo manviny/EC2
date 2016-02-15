@@ -22,7 +22,7 @@ cd /opt/bitnami/apps/$1/htdocs
 wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
 sudo unzip master.zip
 sudo mv ProcessWire-master/* ./
-sudo mv site-blank site
+sudo mv site-default site
 # 3,5.- permisos para instalar 
 sudo chown bitnami:daemon -R /opt/bitnami/apps/$1/htdocs/*
 sudo chmod 777 -R ./site/assets /opt/bitnami/apps/$1/htdocs/site/modules
