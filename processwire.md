@@ -53,7 +53,8 @@ $ sudo nano config.php
 ###Instalar Angular con un HTML mínimo
   
 1. Módulos > nuevo > nombre de la clase > Pages2JSON    
-2. Pegar este código en nuestra web   
+2. Pegar este código en nuestra web  
+3. En cada plantilla (home.php) debemos editarla y en la última pestaña indicarle que campos serán visibles
  
 _init.php
 ```php
@@ -70,7 +71,7 @@ home.php
 ```php
 <script>
   app.controller('HomeCtrl',function($scope){
-      $scope.page={"title":"Home"};
+      $scope.page=<?php echo $page->toJSON() ?>;
   });
 </script>
 
