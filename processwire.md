@@ -17,6 +17,7 @@ Para Mac o Linux usar desde un terminal:
 $ sudo ssh -i ~/.ssh/millave.pem bitnami@254.254.254.254
 ```
 ###Desde el terminal que comunica con nuestro servidor
+#####Preparación del entorno, esto se hace únicamente la primera vez.
 ```sh
 # Debemos asegurarnos de estar en la ruta correcta (/home/bitnami), vamos a comprobarlo
 $ cd   
@@ -24,6 +25,9 @@ $ pwd          #debemos estar en /home/bitnami
 
 # Descargamos una sola vez el script para crear la estructura de la web y BD
 $ wget https://raw.githubusercontent.com/manviny/EC2/master/PwScripts.sh && sudo chmod +x PwScripts.sh  && ./PwScripts.sh
+```
+#####Estos son los pasos que seguimos cada vez que queramos crear una web.
+```sh
 # Ahora podemos crear una nueva web con: sudo ./creaPW.sh seguido de nombreWeb y DBpass
 $ sudo ./creaPW.sh miweb **dbpass**
 ```
