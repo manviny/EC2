@@ -48,7 +48,7 @@ $ sudo nano config.php
 # al final del texto poner
 
   $config->protectCSRF = false;
-
+# Para guardar Ctrl+X y luego Y+enter
 ```
 ###Instalar Angular y otras utilidades
 ```sh
