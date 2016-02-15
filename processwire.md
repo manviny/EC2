@@ -40,9 +40,13 @@ $ sudo ./creaPW.sh miweb **dbpass**  (sin los signos *)
 6. Volver al terminal y escribir **sudo ./finalizaPW.sh miweb**
 7. Para **BORRAR** una web **sudo ./borraPW.sh miweb**
 
-### Si nos aparece el aviso en rojo "...forged"
+### Si nos aparece el aviso en rojo "This request ... to be forged"
 ```sh
-# En .site/config.php al final del texto poner
+# Abrir config.php 
+$ cd ./apps/miweb/htdocs/site
+$ sudo nano config.php
+# al final del texto poner
+
   $config->protectCSRF = false;
 
 ```
