@@ -11,12 +11,12 @@ header('Access-Control-Max-Age: 3600');
 	//////////////////////////////////////////////////////////////
 
 	$request = file_get_contents('php://input');
-	$param = json_decode($request,true);
+	$p = json_decode($request,true);
 
 
 	switch ( $input->urlSegment1 ) {
-	    case "enviaemail":	enviaEmail( $param['user'], $param['pass']); break;
-
+		// Necesita módulo WireMailSmtp instalado
+	    case "enviaemail":	enviaEmail( $p["from"], $p["to"], $p["subject"], $p["message"] ); break;
 		default:
 			throw new Wire404Exception();
 	} 
@@ -26,8 +26,13 @@ header('Access-Control-Max-Age: 3600');
 	 * Key, LastModified, ETag, Size, StorageClass, Owner.DisplayName, Owner.ID
 	 *
 	 */
-	function enviaEmail( $user,  $pass) { 
-		echo "Usuario: ".$user." Contraseña: ".$pass;
+	function enviaEmail( $from, $to, $subject, $message ) { 
+			$mail = wireMail();
+			$mail->to($to)->from($from); // all calls can be chained
+			$mail->subject($subject); 
+			// $mail->body($message);
+			$mail->bodyHTML($message); 
+			$mail->send(); 
+			return json_encode( ["from" => $from, "to" => $to, "subject" => $subject, "message" => $message] );
 
-		return;
 	}	
