@@ -40,7 +40,7 @@ header('Access-Control-Allow-Credentials: true');
      *
      * 	$http({
      *   	method: 'POST',
-     *   	url: 'api/enviaemail/',
+     *   	url: 'api/registerUser/',
      *   	data: {	'NAME': 'usuario', 
      *   			'email': $scope.email, 
      *   			'email2': '', 
