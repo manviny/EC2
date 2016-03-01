@@ -17,35 +17,38 @@ header('Access-Control-Allow-Credentials: true');
 
 
 	switch ( $input->urlSegment1 ) {
+
+		
 	/**
-		ENVIA EMAIL
-      	$http({
-        	method: 'POST',
-        	url: 'api/enviaemail/',
-        	data: {	'from': 'manol@indinet.es', 
-        			'to': $scope.email, 
-        			'subject': $scope.nombre, 
-        			'message': $scope.message},
-      	})
-      	.success(function (result) {  console.log("Si", result); })
-      	.error(function(data){ console.log("error",data) });   
+	 *	ENVIA EMAIL
+     * 	$http({
+     *   	method: 'POST',
+     *   	url: 'api/enviaemail/',
+     *   	data: {	'from': 'manol@indinet.es', 
+     *   			'to': $scope.email, 
+     *   			'subject': $scope.nombre, 
+     *   			'message': $scope.message},
+     * 	})
+     * 	.success(function (result) {  console.log("Si", result); })
+     * 	.error(function(data){ console.log("error",data) });   
      */
 	case "sendEmail":	sendEmail( $p["from"], $p["to"], $p["subject"], $p["message"] ); break;
-	/**
-	  	Crea un nuevo usuario  en Acceso > usuarios con role de invitado (guest)
-	  	El formulario debe enviar el nombre del usu
 
-      	$http({
-        	method: 'POST',
-        	url: 'api/enviaemail/',
-        	data: {	'NAME': 'usuario', 
-        			'email': $scope.email, 
-        			'email2': '', 
-        			'password': $scope.password, 
-        			'password2': $scope.password2 },
-      	})
-      	.success(function (result) {  console.log("Si", result); })
-      	.error(function(data){ console.log("error",data) }); 	 
+
+	/**
+	 * 	Crea un nuevo usuario  en Acceso > usuarios con role de invitado (guest)
+     *
+     * 	$http({
+     *   	method: 'POST',
+     *   	url: 'api/enviaemail/',
+     *   	data: {	'NAME': 'usuario', 
+     *   			'email': $scope.email, 
+     *   			'email2': '', 
+     *   			'password': $scope.password, 
+     *   			'password2': $scope.password2 },
+     * 	})
+     * 	.success(function (result) {  console.log("Si", result); })
+     * 	.error(function(data){ console.log("error",data) }); 	 
 	 */	       
 	case "registerUser": registerUser($d["name"], $d["email"], $d["email2"], $d["password"], $d["password2"]);break;		    
 		default:
