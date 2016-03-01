@@ -23,8 +23,8 @@ header('Access-Control-Allow-Credentials: true');
 	 *	ENVIA EMAIL
      * 	$http({
      *   	method: 'POST',
-     *   	url: 'api/enviaemail/',
-     *   	data: {	'from': 'manol@indinet.es', 
+     *   	url: 'api/sendEmail/',
+     *   	data: {	'from': 'tunombre@correo.es', 
      *   			'to': $scope.email, 
      *   			'subject': $scope.nombre, 
      *   			'message': $scope.message},
