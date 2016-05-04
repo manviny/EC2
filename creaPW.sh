@@ -19,7 +19,16 @@ sudo -u $USER chown -R bitnami /opt/bitnami/apps/$1
 
 # 3.- descargar y descomprimir processwire
 cd /opt/bitnami/apps/$1/htdocs
-wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
+
+if [ -n "$3" ]
+then
+    echo "Descargando $3"
+    wget $3
+else 
+    echo "Descargando ProcessWire desde la web oficial"
+    wget https://github.com/ryancramerdesign/ProcessWire/archive/master.zip
+fi
+
 sudo unzip master.zip
 sudo mv ProcessWire-master/* ./
 sudo mv site-default site
