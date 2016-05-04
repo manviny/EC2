@@ -34,8 +34,8 @@ sudo mv ProcessWire-master/* ./
 # sudo mv site-default site
 # 3,5.- permisos para instalar 
 sudo chown bitnami:daemon -R /opt/bitnami/apps/$1/htdocs/*
-sudo chmod 777 -R ./site/assets /opt/bitnami/apps/$1/htdocs/site/modules
-sudo chmod 777 /opt/bitnami/apps/$1/htdocs/site/config.php
+sudo chmod 775 -R ./site/assets /opt/bitnami/apps/$1/htdocs/site/modules
+sudo chmod 775 /opt/bitnami/apps/$1/htdocs/site/config.php
 sudo mv /opt/bitnami/apps/$1/htdocs/htaccess.txt /opt/bitnami/apps/$1/htdocs/.htaccess
 
 # 3.- descomprimir zip de la app, sino exite crea un phpinfo como 
