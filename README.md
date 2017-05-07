@@ -12,8 +12,8 @@ Webmin + PW
 (B) dreamfactory AMI swap,  odoo, webmin y configurarlo, restart, virtualmin   
 (C) LAMP bitnami AMI swap webmin virtualmin y luego DF u ODoo  
 (D) LAMP bitnami AMI swap ODoo webmin virtualmin y luego DF    
-**(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF ** 
-**(E) Ubuntu -> LAMP AMI Ubuntu 16.04  ODoo virtualmin  **   
+**(E) Ubuntu -> LAMP(TASKSEL) swap ODoo webmin virtualmin y luego DF **   
+**(FUNCIONA) Ubuntu -> LAMP AMI Ubuntu 16.04  ODoo virtualmin  **   
 (F) ubuntu, swap, vestacp, vesta, ODoo, DF  
 (G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo  
 ## UBUNTU 1GB, Bitnami LAMP, DF, Odoo, 
