@@ -32,6 +32,17 @@ Webmin + PW
   - [Restore snapshot](#restore-snapshot)
   
   
+## Install Virtualmin on Ubuntu 16.04
+```sh
+sudo su
+apt-get update && apt-get -y upgrade
+wget http://software.virtualmin.com/gpl/scripts/install.sh
+chmod +x install.sh
+./install.sh
+# add user  "myuser"
+sudo adduser myuser
+sudo usermod -a -G sudo myuser
+```
   
   
 ## Soft link
