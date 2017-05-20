@@ -43,7 +43,12 @@ chmod +x install.sh
 sudo adduser myuser
 sudo usermod -a -G sudo myuser
 ```
-  
+## Reinstall Apache
+```sh
+sudo apt-get purge apache2 
+sudo apt-get install apache2
+```
+
   
 ## Soft link
 ```sh
