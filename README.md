@@ -63,6 +63,12 @@ sudo nano /etc/sysctl.conf
 ```
 
 
+##ZIP FOLDER AND SUBFOLDERS
+[fuente](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+
+```bash
+zip -r foo.zip .
+```
 
 ## Reinstall Apache
 ```sh
