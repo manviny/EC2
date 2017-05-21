@@ -36,6 +36,7 @@ Webmin + PW
 ```sh
 sudo su
 apt-get update && apt-get -y upgrade
+# INCREMENTAR SWAP SI SOLO TENEMOS 1GB
 wget http://software.virtualmin.com/gpl/scripts/install.sh
 chmod +x install.sh
 ./install.sh
