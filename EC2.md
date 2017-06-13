@@ -1,14 +1,14 @@
 
 ## Permitir acceder a un puerto desde una sola IP
   1. Entramos en la consola de AWS
-  2. Vamos a servicios -> EC2
+  2. Vamos a servicios > EC2
   3. En el menú izquierdo pulsamos Security Groups y seleccionamos el que tenemos asociado a nuestro instancia (servidor)
   4. En el menú horizontal que se encuentra a media pantalla pulsamos:
       - **Inbound** > edit, 
       - **Add Rule** 
-      - Type->Custom TCP, 
-      - Port Range -> 10000 y 
-      - en source -> My IP
+      - **Type** => Custom TCP
+      - **Port Range** => 10000 
+      - **source** => My IP
   5. Ahora ya podemos acceder desde nuestra conexión a internet al puerto 10000 de nuestra instancia/servidor 
 
 
