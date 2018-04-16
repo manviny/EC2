@@ -504,9 +504,8 @@ ls -ls /opt/bitnami/apps
 
 ```
 
-# Activar
-https://my-github.s3.amazonaws.com/headers_expires.png
+# Virtualmin activate headers and expires
 
-[logo]: https://my-github.s3.amazonaws.com/headers_expires.png "Logo Title Text 2"
 
+![Virtualmin activate headers and expires](https://my-github.s3.amazonaws.com/headers_expires.png)
 
