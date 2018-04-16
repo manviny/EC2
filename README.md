@@ -504,5 +504,9 @@ ls -ls /opt/bitnami/apps
 
 ```
 
+# Activar
+https://my-github.s3.amazonaws.com/headers_expires.png
+
+[logo]: https://my-github.s3.amazonaws.com/headers_expires.png "Logo Title Text 2"
 
 
