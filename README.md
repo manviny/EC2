@@ -21,7 +21,7 @@ Webmin + PW
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
-  - [Restore webmin](https://github.com/manviny/EC2/blob/master/README.md###-restarurar-webmin) 
+  - [Restore webmin](https://github.com/manviny/EC2/blob/master/README.md#restaurar-webmin) 
   - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9) 
   - [Instalar Dreamfactory](https://github.com/manviny/EC2/blob/master/README.md#instalar-dreamfactory)
   - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
@@ -64,7 +64,7 @@ sudo nano /etc/sysctl.conf
 
 ```
 
-## Restarurar webmin
+## Restaurar webmin
 
 nano /etc/webmin/miniserv.conf  > sssl=0  
 /etc/init.d/webmin restart  
