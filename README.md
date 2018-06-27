@@ -21,6 +21,7 @@ Webmin + PW
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
+  - [Restore webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000) 
   - [Instalar Odoo](https://github.com/manviny/EC2/blob/master/README.md#instalar-odoo-9) 
   - [Instalar Dreamfactory](https://github.com/manviny/EC2/blob/master/README.md#instalar-dreamfactory)
   - [Arrancar aplicaciones al reinicializar el servidor](https://github.com/manviny/EC2/blob/master/README.md#inicializa-aplicaciones-on-reboot)
@@ -63,6 +64,17 @@ sudo nano /etc/sysctl.conf
 
 ```
 
+##Restarurar webmin
+
+nano /etc/webmin/miniserv.conf  > sssl=0  
+/etc/init.d/webmin restart  
+systemctl status webmin.service
+
+
+sudo nano /etc/webmin/miniserv.conf  
+#ipcert_subsite.contoso.com,*.subsite.contoso.com=/home/contoso/ssl.cert  
+#ipkey_subsite.contoso.com,*.subsite.contoso.com=/home/contoso/ssl.key  
+sudo service webmin start  
 
 ##ZIP FOLDER AND SUBFOLDERS
 [fuente](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
