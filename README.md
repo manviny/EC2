@@ -18,6 +18,12 @@ Webmin + PW
 (G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo  
 ## UBUNTU 1GB, Bitnami LAMP, DF, Odoo, 
 
+sudo ssh -i ./awskey.pem ubuntu@IP  
+cd /home/yourweb/public_html  
+zip -r archive.zip .  
+mysqldump -u user -p database > dbname.sql   
+
+
 ###Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
