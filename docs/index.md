@@ -10,7 +10,7 @@ crontab -l
 ```
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
+[cefire](./yieldCefire.md).
 
 There should be whitespace between paragraphs.
 
