@@ -72,9 +72,36 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 - [Electron Toolkit](https://www.npmjs.com/package/electron-toolkit)
 - [TOOLKIT intro](https://hackernoon.com/introducing-electron-toolkit-the-electron-app-to-build-and-launch-electron-apps-6530450e257e)
 - 
-http://flexslider.woothemes.com/thumbnail-slider.html
-http://dfcb.github.io/BigVideo.js/
-https://blueimp.github.io/Gallery/
+- http://flexslider.woothemes.com/thumbnail-slider.html
+- http://dfcb.github.io/BigVideo.js/
+- https://blueimp.github.io/Gallery/
+
+### Prepare React Native environment
+```bash
+brew update
+brew upgrade
+brew install node
+brew install watchman
+
+npm install -g react-native-cli
+```
+### Start React Native app
+```bash
+react-native init albums
+```
+### Launch  app on emulator
+```bash
+react-native run-ios
+react-native run-android
+```
+### Prepare Android Studio
+1. Open existing project, go to the one created in last command and fix errors.  
+2. Tools > Android > AVD Manager > Create Virtual Device (Nexus 5, Marshmallow,23)
+ 
+##completely remove nodejs
+sudo rm -rf /usr/local/{bin/{node,npm},lib/node_modules/npm,lib/node,share/man/*/node.*}
+
+## more
 
 There should be whitespace between paragraphs.
 
