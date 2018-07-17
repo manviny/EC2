@@ -18,10 +18,17 @@ Webmin + PW
 (G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo  
 ## UBUNTU 1GB, Bitnami LAMP, DF, Odoo, 
 
+
+## Osx terminal to ec2 cloud
 sudo ssh -i ./awskey.pem ubuntu@IP  
 cd /home/yourweb/public_html  
 zip -r archive.zip .  
 mysqldump -u user -p database > dbname.sql   
+
+
+## Execute Nightma js on Ubuntu 16.04 server
+apt-get install -y libgtk2.0-0 libgconf-2-4 libasound2 libxtst6 libxss1 libnss3 xvfb  
+xvfb-run -a --server-args="-screen 0 1024x768x24" node [YOUR-SCRIPT.js]  
 
 
 ###Indice
