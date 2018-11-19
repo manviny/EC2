@@ -16,7 +16,7 @@ Webmin + PW
 **(FUNCIONA) Ubuntu -> LAMP AMI Ubuntu 16.04  ODoo virtualmin  **   
 (F) ubuntu, swap, vestacp, vesta, ODoo, DF  
 (G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo  
-## UBUNTU 1GB, Bitnami LAMP, DF, Odoo, 
+
 
 
 ## Osx terminal to ec2 cloud
@@ -34,8 +34,8 @@ systemctl restart mysqld
 apt-get install -y libgtk2.0-0 libgconf-2-4 libasound2 libxtst6 libxss1 libnss3 xvfb  
 xvfb-run -a --server-args="-screen 0 1024x768x24" node [YOUR-SCRIPT.js]  
 
-
-###Indice
+## UBUNTU 1GB, Bitnami LAMP, DF, Odoo, 
+### Indice
   - [Install webmin](https://github.com/manviny/EC2/blob/master/README.md#install-webmin-on-ubuntu-ec2-httpsip10000)  
   - [Incrementar Swap](https://github.com/manviny/EC2/blob/master/README.md#incrementar-swap)  
   - [Restore webmin](https://github.com/manviny/EC2/blob/master/README.md#restaurar-webmin) 
