@@ -23,8 +23,12 @@ Webmin + PW
 sudo ssh -i ./awskey.pem ubuntu@IP  
 cd /home/yourweb/public_html  
 zip -r archive.zip .  
+**copia BD**  
 mysqldump -u user -p database > dbname.sql   
 
+## actualizar mysql
+mysql_upgrade -u root -p --force  
+systemctl restart mysqld
 
 ## Execute Nightma js on Ubuntu 16.04 server
 apt-get install -y libgtk2.0-0 libgconf-2-4 libasound2 libxtst6 libxss1 libnss3 xvfb  
