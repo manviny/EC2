@@ -96,10 +96,16 @@ sudo service webmin start
 zip -r foo.zip .
 ```
 
+## Estado Apache
+```sh
+sudo systemctl status apache2.service 
+sudo apt-get install apache2
+```
+
 ## Reinstall Apache
 ```sh
 sudo apt-get purge apache2 
-sudo apt-get install apache2
+sudo systemctl restart apache2
 ```
 
   
