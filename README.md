@@ -17,6 +17,12 @@ Webmin + PW
 (F) ubuntu, swap, vestacp, vesta, ODoo, DF  
 (G) UBUNTU, swap, ajenti(crear directorios, enable web y mail) => bitnami LAMP(8082) => , instalar seopanel, DF,  Odoo  
 
+## Virtualmin el local
+ssh xabia@172.18.198.3   
+nano /etc/hosts  
+172.18.198.3    usuario.com   
+Al crear nuevo servidor virtual, poner nombre dominio y en  IP address and forwarding -> External IP address  
+
 
 
 ## Osx terminal to ec2 cloud
